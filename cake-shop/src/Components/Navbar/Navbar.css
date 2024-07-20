@@ -170,6 +170,7 @@
   .search-bar-mobile input,
   .search-bar-mobile button {
     width: 80%;
+    height: 2rem;
     margin: 5px 0;
   }
 
