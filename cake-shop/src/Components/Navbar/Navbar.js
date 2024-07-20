@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaSearch } from 'react-icons/fa';
 import './Navbar.css';
+// import '../TemplateData.json';
 import cakeImage from './cake1.webp'; // Replace with your image path
 
 const cakes = [
