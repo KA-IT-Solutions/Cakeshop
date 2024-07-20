@@ -1,0 +1,199 @@
+.product {
+  height: auto; /* Adjusted for flexible height */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Added padding for small screens */
+}
+
+.product h1 {
+  position: relative;
+  color: #555555;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin: 10px 0; /* Reduced margin for smaller screens */
+}
+
+.product h1::before,
+.product h1::after {
+  content: '';
+  position: absolute;
+  top: 60%;
+  width: 30px; /* Reduced width for smaller screens */
+  height: 1px;
+  background-color: #555555;
+}
+
+.product h1::before {
+  left: 0;
+  transform: translateX(-40px); /* Adjusted for smaller width */
+}
+
+.product h1::after {
+  right: 0;
+  transform: translateX(40px); /* Adjusted for smaller width */
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 2em; /* Adjusted font size for better fit on small screens */
+  margin: 15px 0; /* Reduced margin for smaller screens */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding/borders are included in dimensions */
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.card-image:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #555555;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-description {
+  padding: 0 10px 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .card-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .card-title {
+      font-size: 1.2em;
+  }
+
+  .card-description {
+      font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .card-title {
+      font-size: 1em;
+  }
+
+  .card-description {
+      font-size: 0.8em;
+  }
+
+  .product h1 {
+      font-size: 1.2em; /* Adjusted for smaller screens */
+  }
+
+  .main-heading {
+      font-size: 1.5em; /* Adjusted font size for better fit on small screens */
+  }
+}
+
+
+.cake-shop {
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.cake-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.cake-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+
+
+.cake-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.cake-image:hover {
+    transform: scale(1.05);
+  }
+
+.cake-details {
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 18px;
+  color: #333;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: lightgrey;
+  margin-right: 5px;
+}
+
+.discounted-price {
+  color: #000;
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.whatsapp-button svg {
+  margin-right: 5px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1da851;
+}

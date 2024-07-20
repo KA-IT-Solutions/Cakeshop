@@ -1,6 +1,6 @@
 .hero {
-  background-image: url('./hero2.jpg');
-  height: 70vh;
+  background-image: url('./hero1.jpg');
+  height: 60vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -63,6 +63,11 @@
 .hero-button:hover {
   background-color: #ff4500; /* OrangeRed color */
 }
+.PopularCategories h1{
+    font-size: 15px;
+    color: black;
+
+}
 
 /* Keyframes for animations */
 @keyframes fadeIn {
@@ -98,6 +103,21 @@
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
+    .hero {
+        background-image: url('./hero1.jpg');
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        margin-bottom:500px;
+        animation: fadeIn 2s ease-in-out;
+        overflow: hidden;
+      }
   .hero h1 {
     font-size: 2rem;
   }
@@ -113,8 +133,9 @@
 }
 
 @media (max-width: 480px) {
+   
   .hero {
-    height: 60vh;
+    height: 40vh;
   }
 
   .hero h1 {

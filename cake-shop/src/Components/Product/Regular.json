@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "name": "Lemon Cake",
+      "category": "Birthday Party",
+      "price": 150,
+      "quantity": "1 kg",
+      "image": "./Brithday.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "path_to_chocolate_cake_image"
+    }
+    
+  ]
