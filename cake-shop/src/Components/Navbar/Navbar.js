@@ -134,8 +134,8 @@ const Navbar = () => {
           </div>
           <div className={isOpen ? 'nav-menu active' : 'nav-menu'}>
             <Link to="/" className="nav-item" onClick={handleLinkClick}>Home</Link>
-            <Link to="/about" className="nav-item" onClick={handleLinkClick}>About</Link>
-            <Link to="/services" className="nav-item" onClick={handleLinkClick}>Services</Link>
+            <Link to="/regularcake" className="nav-item" onClick={handleLinkClick}>Regular cake</Link>
+            <Link to="/customizecake" className="nav-item" onClick={handleLinkClick}>Customize cake</Link>
             <Link to="/contact" className="nav-item" onClick={handleLinkClick}>Contact</Link>
             <div className="search-bar-mobile">
               <input
