@@ -20,19 +20,19 @@
   content: '';
   position: absolute;
   top: 60%;
-  width: 30px; /* Reduced width for smaller screens */
-  height: 1px;
-  background-color: #555555;
+  width: 70px; /* Reduced width for smaller screens */
+  height: 1.8px;
+  background-color: #eeebeb;
 }
 
 .product h1::before {
   left: 0;
-  transform: translateX(-40px); /* Adjusted for smaller width */
+  transform: translateX(-80px); /* Adjusted for smaller width */
 }
 
 .product h1::after {
   right: 0;
-  transform: translateX(40px); /* Adjusted for smaller width */
+  transform: translateX(80px); /* Adjusted for smaller width */
 }
 
 .main-heading {

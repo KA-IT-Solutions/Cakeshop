@@ -1,11 +1,12 @@
 [
     {
       "id": 1,
+      "image": "./Brithday.jpg",
       "name": "Lemon Cake",
       "category": "Birthday Party",
       "price": 150,
-      "quantity": "1 kg",
-      "image": "./Brithday.jpg"
+      "quantity": "1 kg"
+      
     },
     {
       "id": 2,
@@ -13,7 +14,34 @@
       "category": "Anniversary",
       "price": 250,
       "quantity": "2 kg",
+      "image": "./Brithday.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "path_to_chocolate_cake_image"
+    },
+    {
+      "id": 4,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "path_to_chocolate_cake_image"
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
       "image": "path_to_chocolate_cake_image"
     }
+    
+    
+    
     
   ]
