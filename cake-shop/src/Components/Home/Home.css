@@ -1,0 +1,132 @@
+.hero {
+  background-image: url('./hero2.jpg');
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-bottom:500px;
+  animation: fadeIn 2s ease-in-out;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to make the text more readable */
+  animation: fadeInBackground 3s ease-in-out;
+}
+
+.hero-content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  opacity: 0; /* Start hidden for staggered animation */
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite, fadeIn 1s ease-in-out 1s forwards;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  opacity: 0; /* Start hidden for staggered animation */
+  transform: scale(0.8); /* Start smaller for scale effect */
+  animation: scaleIn 1.5s ease-in-out 1s forwards;
+}
+
+.hero-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ff7f50; /* Coral color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0; /* Start hidden for staggered animation */
+  animation: buttonFadeIn 2.5s ease-in-out 1.5s forwards;
+}
+
+.hero-button:hover {
+  background-color: #ff4500; /* OrangeRed color */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInBackground {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.5; }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes buttonFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.875rem;
+  }
+
+  .hero-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+}
