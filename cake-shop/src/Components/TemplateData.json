@@ -1,0 +1,28 @@
+[
+    {
+      "name": "Chocolate Cake",
+      "price": 25,
+      "image": "cake1.webp"
+    },
+    {
+      "name": "Vanilla Cake",
+      "price": 20,
+      "image": "cake1.webp"
+    },
+    {
+      "name": "Strawberry Cake",
+      "price": 30,
+      "image": "cake1.webp"
+    },
+    {
+      "name": "Red Velvet Cake",
+      "price": 35,
+      "image": "cake1.webp"
+    },
+    {
+      "name": "Lemon Cake",
+      "price": 22,
+      "image": "cake1.webp"
+    }
+  ]
+  
