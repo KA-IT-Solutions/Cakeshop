@@ -57,7 +57,7 @@ const Contact = () => {
             Send Message
           </button>
         </form>
-        <div className="map-container">
+        {/* <div className="map-container">
           <iframe
             title="Google Map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15130.058628442259!2d73.9394557!3d18.5508221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3e54eb23f29%3A0xf965a1376d0a2788!2sThe%20Lila&#39;s%20Cake%20Shop!5e0!3m2!1sen!2sin!4v1721626539569!5m2!1sen!2sin"
@@ -66,7 +66,12 @@ const Contact = () => {
             allowFullScreen="" 
             loading="lazy"
           ></iframe>
+        </div> */}
+        <div className='map-section'>
+        <div className='gmap-frame'>
+       <iframe width="520" height="400" title='lilas company' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=The%20Lila's%20Cake%20Shop%20-%200%20Dining%20Ratings%20-%200%20Delivery%20Ratings%20Bakery%20Kharadi,%20Pune+(Lila's%20Cake%20Shop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe>
         </div>
+      </div> 
       </div>
     </div>
   );

@@ -4,6 +4,9 @@ import Regular from './Regular.jpg'
 import Anivarsary from './Anivarsary.jpg'
 import Brithday from './Brithday.jpg'
 import { FaWhatsapp } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+
 // import cakesData from './Regular.json';
 
 
@@ -106,6 +109,30 @@ const Product = () => {
         <h1>
         Best Selling Cakes</h1>
       </div>
+      <div className='product'>
+        <h1>
+          Contact Us</h1>
+      </div>
+      <div className='contact-us'>
+      <div className='map-section'>
+        <div className='gmap-frame'>
+       <iframe width="520" height="400" title='lilas company' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=The%20Lila's%20Cake%20Shop%20-%200%20Dining%20Ratings%20-%200%20Delivery%20Ratings%20Bakery%20Kharadi,%20Pune+(Lila's%20Cake%20Shop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe>
+        </div>
+      </div>
+      <div className='contact-icon-info'>
+        <h2 className='lilas'>The Lila's Cake Shop</h2><br/>
+      <div className='contact-us-info'>
+        <p className='contact-icon'><FontAwesomeIcon icon={faPhone} /> (123) 456-7890</p><br/>
+      </div>
+      <div className='contact-us-info'>
+      <p className='contact-icon'><FontAwesomeIcon  icon={faEnvelope}  className='e'/> email@example.com</p><br/>
+      </div>
+      <div className='contact-us-info'>
+      <p className='contact-icon'> <FontAwesomeIcon icon={faMapMarkerAlt} /> 1234 Street Name, City, State</p><br/>
+      </div>
+      </div>
+      </div>
+      
 
     </>
   )

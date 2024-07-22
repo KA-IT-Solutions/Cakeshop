@@ -197,3 +197,24 @@
 .whatsapp-button:hover {
   background-color: #1da851;
 }
+
+.map-section .gmap-frame #gmap_canvas{
+  height: 65vh;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.contact-us{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.contact-icon {
+  font-size: 20px;
+  color: #555555;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.lilas{
+  color: #555555;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
