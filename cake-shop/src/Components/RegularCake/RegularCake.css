@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .regular-cake-hero {
-  background-image: url('./RegularCake-image/background-image.jpg');
+  background-image: url('./RegularCake-image/Regular-image.jpg');
   height: 60vh;
   background-size: cover;
   background-position: center;
@@ -15,6 +15,7 @@
   animation: fadeIn 2s ease-in-out;
   overflow: hidden;
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .regular-cake-hero::before {
