@@ -39,6 +39,22 @@
       "price": 250,
       "quantity": "2 kg",
       "image": "/RegularCake-images/RegularCake5.png"
+    },
+    {
+      "id": 6,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake5.png"
+    },
+    {
+      "id": 7,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake5.png"
     }
     
   ]

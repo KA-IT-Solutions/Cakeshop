@@ -7,6 +7,7 @@ import RegularCake from './Components/RegularCake/RegularCake';
 import CustomizeCake from './Components/CustomizeCake/CustomizeCake';
 import Contact from './Components/Contact/Contact';
 
+
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/CustomizeCake" element={<CustomizeCake/>} /> 
           <Route path="/Contact" element={<Contact/>} /> 
         </Routes>
+       
       <Footer/>
     </Router>
  

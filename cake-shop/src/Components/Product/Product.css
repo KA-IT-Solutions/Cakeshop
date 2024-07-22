@@ -118,6 +118,8 @@
 
 .cake-shop {
   padding: 20px;
+  display: grid;
+  grid-template-columns: 10fr  ;
 }
 
 .filters {
@@ -217,4 +219,175 @@
 .lilas{
   color: #555555;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+
+
+
+
+
+
+
+
+/* CakeSlider.css */
+
+.cake-shop {
+  margin: 20px;
+}
+
+.cake-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cake-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  background: #fff;
+  margin: 10px;
+}
+
+.cake-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.cake-details {
+  margin-top: 10px;
+}
+
+.price {
+  margin-top: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-button svg {
+  margin-right: 5px;
+}
+
+
+/* ------------------------------------ */
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.scroll-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.cake-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin: 0 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cake-card:hover {
+  transform: scale(1.05);
+}
+
+.cake-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.cake-details {
+  padding: 16px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.discounted-price {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #25D366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1DA851;
+}
+
+@media (max-width: 768px) {
+  .cake-card {
+      width: 240px;
+  }
+
+  .cake-image {
+      height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cake-card {
+      width: 200px;
+  }
+
+  .cake-image {
+      height: 140px;
+  }
 }
