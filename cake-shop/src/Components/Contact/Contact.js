@@ -2,7 +2,7 @@
 import './Contact.css';
 import React, { useState } from 'react';
 import 'animate.css/animate.min.css';
-
+import axios from 'axios';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -19,11 +19,16 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formState);
-  };
+    try {
+        await axios.post('http://localhost:8000/send', formState);
+        alert('Message sent successfully');
+        setFormState({ name: '', email: '', message: '' });
+    } catch (error) {
+        console.error('There was an error sending the message!', error);
+    }
+};
 
   return (
     <div className="contact-page">
