@@ -7,6 +7,15 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+
+    
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Enables momentum scrolling in iOS */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+  }
+  
+  .customize-filters::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in WebKit browsers */
   }
   
   .customize-filters select {
@@ -82,9 +91,20 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .customize-filters {
+    /* .customize-filters {
       flex-direction: column;
-    }
+      height: 3rem;
+    } */
+
+    .customize-filters {
+        flex-direction: row;
+        height: auto;
+      }
+    
+      .customize-filters-item {
+        flex: 0 0 auto;
+        margin-right: 1rem; /* Optional: Add space between items */
+      }
   
     .customize-cake-cards {
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

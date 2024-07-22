@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import './RegularCake.css';
 import cakesData from '../RegularData.json'; // Assuming cakes.json is in the same directory
+import BackgroundImage from './RegularCake-image/background-image.jpg';
 
 const RegularCake = () => {
   const [filters, setFilters] = useState({ name: '', price: '', quantity: '', category: '' });
@@ -34,6 +35,13 @@ const RegularCake = () => {
 
   return (
     <div className="cake-shop">
+      <div className="regular-cake-hero">
+        <div className="regular-cake-hero-content">
+          <h1 className="regular-cake-hero-h1">Taste the Magic of Our Cakes</h1>
+          <p className="regular-cake-hero-p">The Perfect Cake for Every Occasion</p>
+        </div>
+      </div>
+
       <div className="filters">
         <select onChange={(e) => setFilters({ ...filters, name: e.target.value })}>
           <option value="">Select Cake Name</option>
