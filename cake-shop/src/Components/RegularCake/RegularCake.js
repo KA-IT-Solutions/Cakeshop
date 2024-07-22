@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import './RegularCake.css';
 import cakesData from '../RegularData.json'; // Assuming cakes.json is in the same directory
-import BackgroundImage from './RegularCake-image/background-image.jpg';
 
 const RegularCake = () => {
   const [filters, setFilters] = useState({ name: '', price: '', quantity: '', category: '' });
