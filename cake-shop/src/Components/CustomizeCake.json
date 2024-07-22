@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "name": "Chocolate Cake",
+      "type": "Sponge Cake",
+      "flavor": "Chocolate",
+      "price": 250,
+      "quantity": "2 kg",
+      "dietary": "Nut-Free",
+      "image": "cake1.webp"
+    },
+    {
+      "id": 2,
+      "name": "Vanilla Cake",
+      "type": "Sponge Cake",
+      "flavor": "Vanilla",
+      "price": 200,
+      "quantity": "1 kg",
+      "dietary": "Gluten-Free",
+      "image": "cake2.webp"
+    },
+    {
+      "id": 3,
+      "name": "Strawberry Cake",
+      "type": "Cheesecake",
+      "flavor": "Strawberry",
+      "price": 300,
+      "quantity": "1.5 kg",
+      "dietary": "Vegan",
+      "image": "cake3.webp"
+    },
+    {
+      "id": 4,
+      "name": "Red Velvet Cake",
+      "type": "Mousse Cake",
+      "flavor": "Red Velvet",
+      "price": 350,
+      "quantity": "2 kg",
+      "dietary": "Dairy-Free",
+      "image": "cake4.webp"
+    },
+    {
+      "id": 5,
+      "name": "Lemon Cake",
+      "type": "Ice Cream Cake",
+      "flavor": "Lemon",
+      "price": 220,
+      "quantity": "1 kg",
+      "dietary": "Sugar-Free",
+      "image": "cake5.webp"
+    }
+  ]
+  
