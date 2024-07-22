@@ -1,0 +1,93 @@
+.customize-cake-shop {
+    padding: 20px;
+  }
+  
+  .customize-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .customize-filters select {
+    padding: 10px;
+    font-size: 16px;
+    flex: 1 1 200px;
+  }
+  
+  .customize-cake-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .customize-cake-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .customize-cake-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .customize-cake-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .customize-cake-details {
+    margin-top: 10px;
+  }
+  
+  .customize-price {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .customize-original-price {
+    text-decoration: line-through;
+    color: lightgrey;
+    margin-right: 5px;
+  }
+  
+  .customize-discounted-price {
+    color: #000;
+  }
+  
+  .customize-whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .customize-whatsapp-button svg {
+    margin-right: 5px;
+  }
+  
+  .customize-whatsapp-button:hover {
+    background-color: #1da851;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .customize-filters {
+      flex-direction: column;
+    }
+  
+    .customize-cake-cards {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
