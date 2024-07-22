@@ -28,6 +28,18 @@ const CustomizeCake = () => {
 
   return (
     <div className="customize-cake-shop">
+
+
+      <div className="customize-cake-hero">
+        <div className="customize-cake-hero-content">
+          <h1 className="customize-cake-hero-h1">Taste the Magic of Our Cakes</h1>
+          <p className="customize-cake-hero-p">The Perfect Cake for Every Occasion</p>
+        </div>
+      </div>
+
+
+
+
       <div className="customize-filters">
         <select onChange={(e) => setFilters({ ...filters, type: e.target.value })}>
           <option value="">Select Cake Type</option>
