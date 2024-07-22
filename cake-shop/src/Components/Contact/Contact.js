@@ -63,7 +63,7 @@ const Contact = () => {
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15130.058628442259!2d73.9394557!3d18.5508221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3e54eb23f29%3A0xf965a1376d0a2788!2sThe%20Lila&#39;s%20Cake%20Shop!5e0!3m2!1sen!2sin!4v1721626539569!5m2!1sen!2sin"
             width="600"
             height="450"
-            allowFullScreen=""
+            allowFullScreen="" 
             loading="lazy"
           ></iframe>
         </div>
