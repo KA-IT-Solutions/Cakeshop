@@ -5,7 +5,7 @@ import Regular from './Regular.jpg'
 import Anivarsary from './Anivarsary.jpg'
 import Brithday from './Brithday.jpg'
 import cakesData from '../RegularData.json';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaShoppingBasket } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
@@ -111,7 +111,7 @@ const Product = () => {
                   <span className="discounted-price">₹{cake.price}</span>
                 </p>
                 <button className="whatsapp-button">
-                  <FaWhatsapp /> Buy on WhatsApp
+                <FaShoppingBasket /> Buy on WhatsApp
                 </button>
               </div>
             </div>

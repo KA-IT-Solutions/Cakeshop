@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaShoppingBasket } from 'react-icons/fa';
 import './CustomizeCake.css';
 import cakesData1 from '../CustomizeCake.json';
 
@@ -81,7 +81,7 @@ const CustomizeCake = () => {
                 <span className="customize-discounted-price">₹{cake.price}</span>
               </p>
               <button className="customize-whatsapp-button">
-                <FaWhatsapp /> Buy on WhatsApp
+              <FaShoppingBasket /> Buy on WhatsApp
               </button>
             </div>
           </div>

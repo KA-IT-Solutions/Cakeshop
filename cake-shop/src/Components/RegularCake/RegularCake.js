@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaShoppingBasket } from 'react-icons/fa';
 import './RegularCake.css';
 import cakesData from '../RegularData.json'; // Assuming cakes.json is in the same directory
 
@@ -80,7 +80,7 @@ const RegularCake = () => {
                 <span className="regular-discounted-price">₹{cake.price}</span>
               </p>
               <button className="regular-whatsapp-button">
-                <FaWhatsapp /> Buy on WhatsApp
+              <FaShoppingBasket /> Buy on WhatsApp
               </button>
             </div>
           </div>
