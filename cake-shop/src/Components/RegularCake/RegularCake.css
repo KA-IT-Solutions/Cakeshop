@@ -168,6 +168,11 @@
 
 .cake-shop .regular-cake-details {
   margin-top: 10px;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; */
 }
 
 .cake-shop .regular-price {
@@ -195,6 +200,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: 0 auto; /* Center the button horizontally */
 }
 
 .cake-shop .regular-whatsapp-button svg {

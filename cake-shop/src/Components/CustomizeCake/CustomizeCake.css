@@ -197,6 +197,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 0 auto; /* Center the button horizontally */
+
   }
   
   .customize-whatsapp-button svg {
