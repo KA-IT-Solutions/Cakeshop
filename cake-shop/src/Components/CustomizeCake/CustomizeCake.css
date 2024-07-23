@@ -15,7 +15,6 @@
   position: relative;
   animation: fadeIn 2s ease-in-out;
   overflow: hidden;
-  margin-bottom: 2rem;
   width: 100%;
 }
 
