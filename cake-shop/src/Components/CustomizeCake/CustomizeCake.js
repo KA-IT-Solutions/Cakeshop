@@ -37,9 +37,6 @@ const CustomizeCake = () => {
         </div>
       </div>
 
-
-
-
       <div className="customize-filters">
         <select onChange={(e) => setFilters({ ...filters, type: e.target.value })}>
           <option value="">Select Cake Type</option>

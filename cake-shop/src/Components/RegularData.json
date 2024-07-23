@@ -39,6 +39,126 @@
       "price": 250,
       "quantity": "2 kg",
       "image": "/RegularCake-images/RegularCake5.png"
+    },
+    {
+      "id": 6,
+      "name": "Lemon Cake",
+      "category": "Birthday Party",
+      "price": 150,
+      "quantity": "1 kg",
+      "image": "/RegularCake-images/RegularCake1.png"
+    },
+    {
+      "id": 7,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake2.png"
+    },
+    {
+      "id": 8,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake3.png"
+    },
+    {
+      "id": 9,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake4.png"
+    },
+    {
+      "id": 10,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake5.png"
+    },
+    {
+      "id": 11,
+      "name": "Lemon Cake",
+      "category": "Birthday Party",
+      "price": 150,
+      "quantity": "1 kg",
+      "image": "/RegularCake-images/RegularCake1.png"
+    },
+    {
+      "id": 12,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake2.png"
+    },
+    {
+      "id": 13,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake3.png"
+    },
+    {
+      "id": 14,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake4.png"
+    },
+    {
+      "id": 15,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake5.png"
+    },
+    {
+      "id": 16,
+      "name": "Lemon Cake",
+      "category": "Birthday Party",
+      "price": 150,
+      "quantity": "1 kg",
+      "image": "/RegularCake-images/RegularCake1.png"
+    },
+    {
+      "id": 17,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake2.png"
+    },
+    {
+      "id": 18,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake3.png"
+    },
+    {
+      "id": 19,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake4.png"
+    },
+    {
+      "id": 20,
+      "name": "Chocolate Cake",
+      "category": "Anniversary",
+      "price": 250,
+      "quantity": "2 kg",
+      "image": "/RegularCake-images/RegularCake5.png"
     }
     
   ]

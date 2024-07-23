@@ -40,9 +40,7 @@ const RegularCake = () => {
           <p className="regular-cake-hero-p">The Perfect Cake for Every Occasion</p>
         </div>
       </div>
-
       
-
       <div className="filters">
         <select onChange={(e) => setFilters({ ...filters, name: e.target.value })}>
           <option value="">Select Cake Name</option>
@@ -70,18 +68,18 @@ const RegularCake = () => {
           {/* Add more options as needed */}
         </select>
       </div>
-      <div className="cake-cards">
+      <div className="regular-cake-cards">
         {filteredCakes.map(cake => (
-          <div key={cake.id} className="cake-card">
-            <img src={cake.image} alt={cake.name} className="cake-image" />
-            <div className="cake-details">
+          <div key={cake.id} className="regular-cake-card">
+            <img src={cake.image} alt={cake.name} className="regular-cake-image" />
+            <div className="regular-cake-details">
               <h3>{cake.name}</h3>
               <p>{cake.quantity}</p>
-              <p className="price">
-                <span className="original-price">₹{cake.price * 1.2}</span> {/* Assuming original price is 20% higher */}
-                <span className="discounted-price">₹{cake.price}</span>
+              <p className="regular-price">
+                <span className="regular-original-price">₹{cake.price * 1.2}</span> {/* Assuming original price is 20% higher */}
+                <span className="regular-discounted-price">₹{cake.price}</span>
               </p>
-              <button className="whatsapp-button">
+              <button className="regular-whatsapp-button">
                 <FaWhatsapp /> Buy on WhatsApp
               </button>
             </div>
