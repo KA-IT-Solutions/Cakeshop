@@ -10,10 +10,10 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section company-info">
           <h3>Company Info</h3>
-          <p>Cake Shop Inc.</p>
-          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> 123 Bakery Street, Sweet City</p>
-          <p><FontAwesomeIcon icon={faPhone} /> (123) 456-7890</p>
-          <p><FontAwesomeIcon icon={faEnvelope} /> info@cakeshop.com</p>
+          <p> The Lila's Cake Shop</p>
+          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> The Lila's cake shop, sadguru plaza, opposite more store, Rakshak Nagar, Kharadi, Pune, Maharashtra 411014, India</p>
+          <p><FontAwesomeIcon icon={faPhone} /> +91-9096797961</p>
+          <p><FontAwesomeIcon icon={faEnvelope} /> lilascakeshop@gmail.com</p>
         </div>
         <div className="footer-section quick-links">
           <h3>Quick Links</h3>
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} Cake Shop Inc. All Rights Reserved.
+        &copy; {new Date().getFullYear()} KAIT Software Solution LLP. All Rights Reserved.
       </div>
     </footer>
   );

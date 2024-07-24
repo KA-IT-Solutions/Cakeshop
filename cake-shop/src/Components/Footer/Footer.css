@@ -1,8 +1,9 @@
 .footer {
-    background-color: #333;
+    background-image: url('./footercake.jpg');
     color: white;
     padding: 20px 0;
     text-align: center;
+    margin-top: 15px;
   }
   
   .footer-content {
@@ -22,10 +23,20 @@
     margin-bottom: 15px;
   }
   
-  .footer-section p, .footer-section ul, .footer-section a {
+  .footer-section p, .footer-section a {
     margin: 5px 0;
     color: white;
     text-decoration: none;
+    text-align: left;
+    margin-left: 130px;
+  }
+  .footer-section ul{
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 10px;
+
   }
   
   .footer-section ul {
@@ -55,7 +66,7 @@
   }
   
   .footer-bottom {
-    background-color: #222;
+    background-color:rgb(4, 4, 19);
     color: #bbb;
     padding: 10px 0;
   }

@@ -69,6 +69,50 @@ const Product = () => {
           ))}
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div className="slider-wrapper">
+        <button className="scroll-button" onClick={scrollLeft}>‹</button>
+        <div className="slider-container" ref={sliderRef}>
+          {cards.map(card => (
+            <div key={card.id} className="cake-card">
+               <img src={card.image} alt={card.title} className="card-image" />
+              <div className="cake-details">
+              <h3 className="card-title">{card.title}</h3>
+              
+              </div>
+            </div>
+          ))}
+        </div>
+        <button className="scroll-button" onClick={scrollRight}>›</button>
+      </div> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div className='product'>
         <h1>
           Best Seller Of The Day</h1>
@@ -95,7 +139,13 @@ const Product = () => {
         </div>
       </div>  */}
 
+
+
+      
+
       {/* -------------------------------- */}
+
+
 
       <div className="slider-wrapper">
         <button className="scroll-button" onClick={scrollLeft}>‹</button>
@@ -166,30 +216,71 @@ const Product = () => {
           ))}
         </div>
       </div> */}
+
+<div className='cake'>
+        
+      </div>
+
       <div className='product'>
         <h1>
           Best Selling Cakes</h1>
       </div>
+
+
+
+
+
+        
+      <div className="slider-wrapper">
+        <button className="scroll-button" onClick={scrollLeft}>‹</button>
+        <div className="slider-container" ref={sliderRef}>
+          {cakesData.map(cake => (
+            <div key={cake.id} className="cake-card">
+              <img src={cake.image} alt={cake.name} className="cake-image" />
+              <div className="cake-details">
+                <h3>{cake.name}</h3>
+                <p>{cake.quantity}</p>
+                <p className="price">
+                  <span className="original-price">₹{cake.price * 1.2}</span>
+                  <span className="discounted-price">₹{cake.price}</span>
+                </p>
+                <button className="whatsapp-button">
+                <FaShoppingBasket /> Buy on WhatsApp
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+        <button className="scroll-button" onClick={scrollRight}>›</button>
+      </div>
+
+
+
+     <div className='cake1'>
+
+     </div>
+
+      
       <div className='product'>
         <h1>
           Contact Us</h1>
       </div>
       <div className='contact-us'>
-        <div className='map-section'>
+        <div className='map-sectio'>
           <div className='gmap-frame'>
-            <iframe width="520" height="400" title='lilas company' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=The%20Lila's%20Cake%20Shop%20-%200%20Dining%20Ratings%20-%200%20Delivery%20Ratings%20Bakery%20Kharadi,%20Pune+(Lila's%20Cake%20Shop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe>
+            <iframe width="350" height="350" title='lilas company' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=The%20Lila's%20Cake%20Shop%20-%200%20Dining%20Ratings%20-%200%20Delivery%20Ratings%20Bakery%20Kharadi,%20Pune+(Lila's%20Cake%20Shop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe>
           </div>
         </div>
         <div className='contact-icon-info'>
           <h2 className='lilas'>The Lila's Cake Shop</h2><br />
           <div className='contact-us-info'>
-            <p className='contact-icon'><FontAwesomeIcon icon={faPhone} /> (123) 456-7890</p><br />
+            <p className='contact-icon'><FontAwesomeIcon icon={faPhone} /> +91-9096797961</p><br />
           </div>
           <div className='contact-us-info'>
-            <p className='contact-icon'><FontAwesomeIcon icon={faEnvelope} className='e' /> email@example.com</p><br />
+            <p className='contact-icon'><FontAwesomeIcon icon={faEnvelope} className='e' /> lilascakeshop@gmail.com</p><br />
           </div>
           <div className='contact-us-info'>
-            <p className='contact-icon'> <FontAwesomeIcon icon={faMapMarkerAlt} /> 1234 Street Name, City, State</p><br />
+            <p className='contact-icon'> <FontAwesomeIcon icon={faMapMarkerAlt} />  The Lila's cake shop, sadguru plaza, opposite more store, Rakshak Nagar, Kharadi, Pune, Maharashtra 411014, India</p><br />
           </div>
         </div>
       </div>

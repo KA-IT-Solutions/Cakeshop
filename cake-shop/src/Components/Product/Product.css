@@ -48,6 +48,39 @@
   padding: 20px;
 }
 
+.cake {
+  background-image: url('./cake.jpg');
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 2s ease-in-out;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 0; /* Removed the large margin-bottom */
+}
+
+.cake1 {
+  background-image: url('./hero1.jpg');
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 2s ease-in-out;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 0; /* Removed the large margin-bottom */
+}
 .card {
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -77,6 +110,11 @@
 .card-description {
   padding: 0 10px 10px;
 }
+.contact-us{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -90,6 +128,20 @@
 
   .card-description {
       font-size: 0.9em;
+  }
+  .contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+  }
+  .map-sectio{
+    height: 100px;
+    width: 100px;
+  }
+  .contact-icon-info{
+    height: 300px;
+    width: 300px;
   }
 }
 
@@ -113,6 +165,21 @@
   .main-heading {
       font-size: 1.5em; /* Adjusted font size for better fit on small screens */
   }
+  .contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+  }
+  .map-sectio{
+    height: 350px;
+    width: 350px;
+  }
+  .contact-icon-info{
+    height: 350px;
+    width: 350px;
+  }
+
 }
 
 
@@ -224,6 +291,12 @@
 }
 
 
+.contact-icon-info{
+  height: 500px;
+  width: 500px;
+}
+
+
 
 
 
@@ -316,8 +389,8 @@
 
 .cake-card {
   flex: 0 0 auto;
-  width: 300px;
-  margin: 0 10px;
+  width: 200px; /* Reduced width */
+  margin: 0 6px; /* Reduced margin */
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -330,44 +403,47 @@
 
 .cake-image {
   width: 100%;
-  height: 200px;
+  height: 120px; /* Reduced height */
   object-fit: cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
 .cake-details {
-  padding: 16px;
+  padding: 8px; /* Reduced padding */
 }
 
 .price {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  margin: 4px 0; /* Reduced margin */
 }
 
 .original-price {
   text-decoration: line-through;
   color: #888;
+  font-size: 0.7rem; /* Reduced font size */
 }
 
 .discounted-price {
   font-weight: bold;
   color: #e74c3c;
+  font-size: 0.8rem; /* Reduced font size */
 }
 
 .whatsapp-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 6px; /* Reduced padding */
   background-color: #25D366;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 0.7rem; /* Reduced font size */
 }
 
 .whatsapp-button:hover {
@@ -376,20 +452,70 @@
 
 @media (max-width: 768px) {
   .cake-card {
-      width: 240px;
+    width: 160px; /* Further reduced width */
   }
 
   .cake-image {
-      height: 160px;
+    height: 100px; /* Further reduced height */
+  }
+
+  .cake-details {
+    padding: 6px; /* Further reduced padding */
+  }
+
+  .price {
+    margin: 2px 0; /* Further reduced margin */
+  }
+
+  .original-price {
+    font-size: 0.6rem; /* Further reduced font size */
+  }
+
+  .discounted-price {
+    font-size: 0.7rem; /* Further reduced font size */
+  }
+
+  .whatsapp-button {
+    padding: 4px; /* Further reduced padding */
+    font-size: 0.6rem; /* Further reduced font size */
+  }
+  .contact-icon-info{
+    height: 400px;
+    width: 350px;
   }
 }
 
 @media (max-width: 480px) {
   .cake-card {
-      width: 200px;
+    width: 140px; /* Further reduced width */
   }
 
   .cake-image {
-      height: 140px;
+    height: 90px; /* Further reduced height */
+  }
+
+  .cake-details {
+    padding: 4px; /* Further reduced padding */
+  }
+
+  .price {
+    margin: 2px 0; /* Further reduced margin */
+  }
+
+  .original-price {
+    font-size: 0.5rem; /* Further reduced font size */
+  }
+
+  .discounted-price {
+    font-size: 0.6rem; /* Further reduced font size */
+  }
+
+  .whatsapp-button {
+    padding: 2px; /* Further reduced padding */
+    font-size: 0.5rem; /* Further reduced font size */
+  }
+  .contact-icon-info{
+    height: 400px;
+    width: 350px;
   }
 }
