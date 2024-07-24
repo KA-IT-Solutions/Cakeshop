@@ -44,7 +44,7 @@
   top: 60px;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9); /* Transparent background */
+  background: rgba(220, 130, 130, 0.9); /* Transparent background */
   z-index: 1;
 }
 
