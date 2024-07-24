@@ -1,503 +1,206 @@
+
 [
-    {
-      "id": 1,
-      "name": "Chocolate Cake",
-      "type": "Sponge Cake",
-      "flavor": "Chocolate",
-      "price": 250,
-      "quantity": "2 kg",
-      "dietary": "Nut-Free",
-      "image": "cake1.webp"
-    },
-    {
-      "id": 2,
-      "name": "Vanilla Cake",
-      "type": "Sponge Cake",
-      "flavor": "Vanilla",
-      "price": 200,
-      "quantity": "1 kg",
-      "dietary": "Gluten-Free",
-      "image": "cake2.webp"
-    },
-    {
-      "id": 3,
-      "name": "Strawberry Cake",
-      "type": "Cheesecake",
-      "flavor": "Strawberry",
-      "price": 300,
-      "quantity": "1.5 kg",
-      "dietary": "Vegan",
-      "image": "cake3.webp"
-    },
-    {
-      "id": 4,
-      "name": "Red Velvet Cake",
-      "type": "Mousse Cake",
-      "flavor": "Red Velvet",
-      "price": 350,
-      "quantity": "2 kg",
-      "dietary": "Dairy-Free",
-      "image": "cake4.webp"
-    },
-    {
-      "id": 5,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 6,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 7,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 8,
-      "name": "Chocolate Cake",
-      "type": "Sponge Cake",
-      "flavor": "Chocolate",
-      "price": 250,
-      "quantity": "2 kg",
-      "dietary": "Nut-Free",
-      "image": "cake1.webp"
-    },
-    {
-      "id": 9,
-      "name": "Vanilla Cake",
-      "type": "Sponge Cake",
-      "flavor": "Vanilla",
-      "price": 200,
-      "quantity": "1 kg",
-      "dietary": "Gluten-Free",
-      "image": "cake2.webp"
-    },
-    {
-      "id": 10,
-      "name": "Strawberry Cake",
-      "type": "Cheesecake",
-      "flavor": "Strawberry",
-      "price": 300,
-      "quantity": "1.5 kg",
-      "dietary": "Vegan",
-      "image": "cake3.webp"
-    },
-    {
-      "id": 11,
-      "name": "Red Velvet Cake",
-      "type": "Mousse Cake",
-      "flavor": "Red Velvet",
-      "price": 350,
-      "quantity": "2 kg",
-      "dietary": "Dairy-Free",
-      "image": "cake4.webp"
-    },
-    {
-      "id": 12,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 13,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 14,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 15,
-      "name": "Chocolate Cake",
-      "type": "Sponge Cake",
-      "flavor": "Chocolate",
-      "price": 250,
-      "quantity": "2 kg",
-      "dietary": "Nut-Free",
-      "image": "cake1.webp"
-    },
-    {
-      "id": 16,
-      "name": "Vanilla Cake",
-      "type": "Sponge Cake",
-      "flavor": "Vanilla",
-      "price": 200,
-      "quantity": "1 kg",
-      "dietary": "Gluten-Free",
-      "image": "cake2.webp"
-    },
-    {
-      "id": 17,
-      "name": "Strawberry Cake",
-      "type": "Cheesecake",
-      "flavor": "Strawberry",
-      "price": 300,
-      "quantity": "1.5 kg",
-      "dietary": "Vegan",
-      "image": "cake3.webp"
-    },
-    {
-      "id": 18,
-      "name": "Red Velvet Cake",
-      "type": "Mousse Cake",
-      "flavor": "Red Velvet",
-      "price": 350,
-      "quantity": "2 kg",
-      "dietary": "Dairy-Free",
-      "image": "cake4.webp"
-    },
-    {
-      "id": 19,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 20,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 21,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 22,
-      "name": "Chocolate Cake",
-      "type": "Sponge Cake",
-      "flavor": "Chocolate",
-      "price": 250,
-      "quantity": "2 kg",
-      "dietary": "Nut-Free",
-      "image": "cake1.webp"
-    },
-    {
-      "id": 23,
-      "name": "Vanilla Cake",
-      "type": "Sponge Cake",
-      "flavor": "Vanilla",
-      "price": 200,
-      "quantity": "1 kg",
-      "dietary": "Gluten-Free",
-      "image": "cake2.webp"
-    },
-    {
-      "id": 24,
-      "name": "Strawberry Cake",
-      "type": "Cheesecake",
-      "flavor": "Strawberry",
-      "price": 300,
-      "quantity": "1.5 kg",
-      "dietary": "Vegan",
-      "image": "cake3.webp"
-    },
-    {
-      "id": 25,
-      "name": "Red Velvet Cake",
-      "type": "Mousse Cake",
-      "flavor": "Red Velvet",
-      "price": 350,
-      "quantity": "2 kg",
-      "dietary": "Dairy-Free",
-      "image": "cake4.webp"
-    },
-    {
-      "id": 26,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 27,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 28,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 29,
-      "name": "Chocolate Cake",
-      "type": "Sponge Cake",
-      "flavor": "Chocolate",
-      "price": 250,
-      "quantity": "2 kg",
-      "dietary": "Nut-Free",
-      "image": "cake1.webp"
-    },
-    {
-      "id": 30,
-      "name": "Vanilla Cake",
-      "type": "Sponge Cake",
-      "flavor": "Vanilla",
-      "price": 200,
-      "quantity": "1 kg",
-      "dietary": "Gluten-Free",
-      "image": "cake2.webp"
-    },
-    {
-      "id": 31,
-      "name": "Strawberry Cake",
-      "type": "Cheesecake",
-      "flavor": "Strawberry",
-      "price": 300,
-      "quantity": "1.5 kg",
-      "dietary": "Vegan",
-      "image": "cake3.webp"
-    },
-    {
-      "id": 32,
-      "name": "Red Velvet Cake",
-      "type": "Mousse Cake",
-      "flavor": "Red Velvet",
-      "price": 350,
-      "quantity": "2 kg",
-      "dietary": "Dairy-Free",
-      "image": "cake4.webp"
-    },
-    {
-      "id": 33,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 34,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 35,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 36,
-      "name": "Chocolate Cake",
-      "type": "Sponge Cake",
-      "flavor": "Chocolate",
-      "price": 250,
-      "quantity": "2 kg",
-      "dietary": "Nut-Free",
-      "image": "cake1.webp"
-    },
-    {
-      "id": 37,
-      "name": "Vanilla Cake",
-      "type": "Sponge Cake",
-      "flavor": "Vanilla",
-      "price": 200,
-      "quantity": "1 kg",
-      "dietary": "Gluten-Free",
-      "image": "cake2.webp"
-    },
-    {
-      "id": 38,
-      "name": "Strawberry Cake",
-      "type": "Cheesecake",
-      "flavor": "Strawberry",
-      "price": 300,
-      "quantity": "1.5 kg",
-      "dietary": "Vegan",
-      "image": "cake3.webp"
-    },
-    {
-      "id": 39,
-      "name": "Red Velvet Cake",
-      "type": "Mousse Cake",
-      "flavor": "Red Velvet",
-      "price": 350,
-      "quantity": "2 kg",
-      "dietary": "Dairy-Free",
-      "image": "cake4.webp"
-    },
-    {
-      "id": 40,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 41,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 42,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 43,
-      "name": "Chocolate Cake",
-      "type": "Sponge Cake",
-      "flavor": "Chocolate",
-      "price": 250,
-      "quantity": "2 kg",
-      "dietary": "Nut-Free",
-      "image": "cake1.webp"
-    },
-    {
-      "id": 44,
-      "name": "Vanilla Cake",
-      "type": "Sponge Cake",
-      "flavor": "Vanilla",
-      "price": 200,
-      "quantity": "1 kg",
-      "dietary": "Gluten-Free",
-      "image": "cake2.webp"
-    },
-    {
-      "id": 45,
-      "name": "Strawberry Cake",
-      "type": "Cheesecake",
-      "flavor": "Strawberry",
-      "price": 300,
-      "quantity": "1.5 kg",
-      "dietary": "Vegan",
-      "image": "cake3.webp"
-    },
-    {
-      "id": 46,
-      "name": "Red Velvet Cake",
-      "type": "Mousse Cake",
-      "flavor": "Red Velvet",
-      "price": 350,
-      "quantity": "2 kg",
-      "dietary": "Dairy-Free",
-      "image": "cake4.webp"
-    },
-    {
-      "id": 47,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 48,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 49,
-      "name": "Lemon Cake",
-      "type": "Ice Cream Cake",
-      "flavor": "Lemon",
-      "price": 220,
-      "quantity": "1 kg",
-      "dietary": "Sugar-Free",
-      "image": "cake5.webp"
-    },
-    {
-      "id": 50,
-      "name": "Chocolate Cake",
-      "type": "Sponge Cake",
-      "flavor": "Chocolate",
-      "price": 250,
-      "quantity": "2 kg",
-      "dietary": "Nut-Free",
-      "image": "cake1.webp"
-    }
-  ]
+  {
+    "id": 1,
+    "name": "White Forrest",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake1.png"
+  },
+  {
+    "id": 2,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake2.png"
+  },
+  {
+    "id": 3,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake3.png"
+  },
+  {
+    "id": 4,
+    "name": "Rose Gulkand",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake4.png"
+  },
+  {
+    "id": 5,
+    "name": "Pineapple Cake",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake5.png"
+  },
+  {
+    "id": 6,
+    "name": "Butter Scoth",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake6.png"
+  },
+  {
+    "id": 7,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake7.png"
+  },
+  {
+    "id": 8,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake8.png"
+  },
+  {
+    "id": 9,
+    "name": "Chocolate Crunch",
+    "category": "Anniversary",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake9.png"
+  },
+  {
+    "id": 10,
+    "name": "Chocolate Truffle Cake",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake10.png"
+  },
+  {
+    "id": 11,
+    "name": "Black Forrest",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake11.png"
+  },
+  {
+    "id": 12,
+    "name": "White Forrest",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake12.png"
+  },
+  {
+    "id": 13,
+    "name": "Chocolate Chips",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake13.png"
+  },
+  {
+    "id": 14,
+    "name": "Kitkat Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake14.png"
+  },
+  {
+    "id": 15,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake15.png"
+  },
+  {
+    "id": 16,
+    "name": "Miled Chocalate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake16.png"
+  },
+  {
+    "id": 17,
+    "name": "Chocolate Crunch",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake17.png"
+  },
+  {
+    "id": 18,
+    "name": "Chocolate Cake",
+    "category": "Anniversary",
+    "price": 250,
+    "quantity": "2 kg",
+    "image": "/CustomizeCake-images/CusCake18.png"
+  },
+  {
+    "id": 19,
+    "name": "Strawberry Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake19.png"
+  },
+  {
+    "id": 20,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 380,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake20.png"
+  },
+  {
+    "id": 21,
+    "name": "Kaju Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake21.png"
+  },
+  {
+    "id": 22,
+    "name": "Rich Coffee Chocalate",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake22.png"
+  },
+  {
+    "id": 23,
+    "name": "Chocolate Mocca",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake23.png"
+  },
+  {
+    "id": 24,
+    "name": "Almond Trffle",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake24.png"
+  },
+  {
+    "id": 25,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake25.png"
+  }
   
+  
+]
+
