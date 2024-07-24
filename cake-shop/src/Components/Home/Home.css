@@ -104,7 +104,7 @@
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .hero {
-    background-image: url('./hero1.jpg');
+    background-image: url('./hero.jpg');
     height: 40vh;
     background-size: cover;
     background-position: center;
@@ -133,6 +133,21 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    background-image: url('./hero.jpg');
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+    overflow: hidden;
+  }
+
   .hero {
     height: 40vh;
   }

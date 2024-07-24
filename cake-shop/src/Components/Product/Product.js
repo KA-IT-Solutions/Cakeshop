@@ -1,9 +1,10 @@
 
 import React, { useRef } from 'react';
 import './Product.css'
-import Regular from './Regular.jpg'
+import Regular from './Regular.png'
 import Anivarsary from './Anivarsary.jpg'
 import Brithday from './Brithday.jpg'
+import Customise from './cutom.jpeg'
 import cakesData from '../RegularData.json';
 import { FaShoppingBasket } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -45,8 +46,8 @@ const Product = () => {
       title: 'Brithday'
     },
     {
-      image: Brithday,
-      title: 'customise'
+      image: Customise,
+      title: 'Customise'
     },
   ]
 

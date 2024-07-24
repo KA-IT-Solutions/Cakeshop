@@ -9,8 +9,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section company-info">
-          <h3>Company Info</h3>
-          <p> The Lila's Cake Shop</p>
+          <h3> The Lila's Cake Shop</h3>
+         
           <p><FontAwesomeIcon icon={faMapMarkerAlt} /> The Lila's cake shop, sadguru plaza, opposite more store, Rakshak Nagar, Kharadi, Pune, Maharashtra 411014, India</p>
           <p><FontAwesomeIcon icon={faPhone} /> +91-9096797961</p>
           <p><FontAwesomeIcon icon={faEnvelope} /> lilascakeshop@gmail.com</p>
@@ -29,8 +29,8 @@ const Footer = () => {
           <div className="social-icons">
             <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} /></a>
             <a href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
-            <a href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
-            <a href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="https://www.instagram.com/_.the_lilas_cakes._/"><FontAwesomeIcon icon={faInstagram} /></a>
+            
           </div>
         </div>
       </div>

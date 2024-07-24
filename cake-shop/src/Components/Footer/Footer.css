@@ -77,8 +77,23 @@
       align-items: center;
     }
   
-    .footer-section {
+    /* .footer-section {
       margin: 20px 0;
+    } */
+    .footer-section p, .footer-section a {
+      margin: 5px 0;
+      color: white;
+      text-decoration: none;
+      text-align: left;
+      margin-left: 50px;
+    }
+    .footer-section ul{
+      margin: 5px 0;
+      color: white;
+      text-decoration: none;
+      text-align: left;
+      margin-left: 10px;
+  
     }
   }
   
