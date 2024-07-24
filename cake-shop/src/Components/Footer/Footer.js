@@ -9,13 +9,13 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section company-info">
-          <h3> The Lila's Cake Shop</h3>
+          <h3 className='lilas-font'> The Lila's Cake Shop</h3>
          
-          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> The Lila's cake shop, sadguru plaza, opposite more store, Rakshak Nagar, Kharadi, Pune, Maharashtra 411014, India</p>
-          <p><FontAwesomeIcon icon={faPhone} /> +91-9096797961</p>
-          <p><FontAwesomeIcon icon={faEnvelope} /> lilascakeshop@gmail.com</p>
+          <p className='lilas-font'><FontAwesomeIcon icon={faMapMarkerAlt} /> The Lila's cake shop, sadguru plaza, opposite more store, Rakshak Nagar, Kharadi, Pune, Maharashtra 411014, India</p>
+          <p className='lilas-font'><FontAwesomeIcon icon={faPhone} /> +91-9096797961</p>
+          <p className='lilas-font'><FontAwesomeIcon icon={faEnvelope} /> lilascakeshop@gmail.com</p>
         </div>
-        <div className="footer-section quick-links">
+        {/* <div className="footer-section quick-links">
           <h3>Quick Links</h3>
           <ul>
             <li><a href="#about">About Us</a></li>
@@ -23,9 +23,9 @@ const Footer = () => {
             <li><a href="#contact">Contact Us</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
-        </div>
+        </div> */}
         <div className="footer-section social-media">
-          <h3>Follow Us</h3>
+          <h3 className='lilas-font'>Follow Us</h3>
           <div className="social-icons">
             <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} /></a>
             <a href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
