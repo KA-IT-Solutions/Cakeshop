@@ -69,11 +69,11 @@ h1 {
 }
 
 /* Map container */
-.map-section {
+/* .map-section {
   flex: 1;
   min-width: 300px;
   margin-top: 1rem;
-}
+} */
 
 .gmap-frame {
   height: 400px; /* Adjust height as needed */
@@ -117,6 +117,13 @@ h1 {
     font-size: 0.9rem;
     padding: 0.8rem;
     width: 70%;
+  }
+  .gmap-frame{
+    height: 400px;
+    width: 350px;
+    margin-left: -60px;
+    
+   
   }
   
 

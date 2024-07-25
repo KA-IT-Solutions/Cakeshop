@@ -7,8 +7,8 @@ const Home = () => {
     <>
     <div className="hero">
       <div className="hero-content">
-        <h1>Welcome to Our Website</h1>
-        <p>Your journey begins here</p>
+        <h1>Welcome to Your Sweet Escape</h1>
+        <p>The Lila's Cake Shop: Sweetness Redefined</p>
         {/* <button className="hero-button">Get Started</button> */}
       </div>
     </div>

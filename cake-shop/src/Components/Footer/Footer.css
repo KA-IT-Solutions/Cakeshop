@@ -39,14 +39,10 @@
 
   }
   
-  .footer-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 10px;
-  }
+ .lilas-font{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1px;
+ }
   
   .social-icons {
     display: flex;
@@ -77,8 +73,23 @@
       align-items: center;
     }
   
-    .footer-section {
+    /* .footer-section {
       margin: 20px 0;
+    } */
+    .footer-section p, .footer-section a {
+      margin: 5px 0;
+      color: white;
+      text-decoration: none;
+      text-align: left;
+      margin-left: 50px;
+    }
+    .footer-section ul{
+      margin: 5px 0;
+      color: white;
+      text-decoration: none;
+      text-align: left;
+      margin-left: 10px;
+  
     }
   }
   

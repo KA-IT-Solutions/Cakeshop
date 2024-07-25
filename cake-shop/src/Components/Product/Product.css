@@ -305,7 +305,7 @@
 
 
 /* CakeSlider.css */
-
+/* 
 .cake-shop {
   margin: 20px;
 }
@@ -358,7 +358,7 @@
 
 .whatsapp-button svg {
   margin-right: 5px;
-}
+} */
 
 
 /* ------------------------------------ */
@@ -456,7 +456,8 @@
   }
 
   .cake-image {
-    height: 100px; /* Further reduced height */
+    height: 100px;
+    width: 100%; /* Further reduced height */
   }
 
   .cake-details {
@@ -479,9 +480,23 @@
     padding: 4px; /* Further reduced padding */
     font-size: 0.6rem; /* Further reduced font size */
   }
+  .gmap-frame{
+    height: 400px;
+    width: 350px;
+    margin-left: 20px;
+  }
   .contact-icon-info{
     height: 400px;
     width: 350px;
+    margin-left: 20px;
+  }
+  .cake{
+    height: 100px;
+    width: 100%;
+  }
+  .cake1{
+    height: 100px;
+    width: 100%;
   }
 }
 
@@ -491,7 +506,8 @@
   }
 
   .cake-image {
-    height: 90px; /* Further reduced height */
+    height: 100px;
+    width: 100%; /* Further reduced height */
   }
 
   .cake-details {
@@ -514,8 +530,22 @@
     padding: 2px; /* Further reduced padding */
     font-size: 0.5rem; /* Further reduced font size */
   }
+  .gmap-frame{
+    height: 400px;
+    width: 350px;
+    margin-left: 20px;
+  }
   .contact-icon-info{
     height: 400px;
     width: 350px;
+    margin-left: 20px;
+  }
+  .cake{
+    height: 150px;
+    width: 100%;
+  }
+  .cake1{
+    height: 150px;
+    width: 100%;
   }
 }
