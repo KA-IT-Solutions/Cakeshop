@@ -3,13 +3,14 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { FaBars, FaSearch } from 'react-icons/fa';
 import './Navbar.css';
 import templateData from '../TemplateData.json';
-import cakeImage from './cake1.webp'; // Replace with your image path
+// import cakeImage from './cake1.webp'; // Replace with your image path
 import logo from './logo.png'; // Replace with your logo image path
 
 const cakes = templateData.map(cake => ({
   ...cake,
-  image: cakeImage // assuming all cakes use the same image path, adjust if different images are used
+  image: cake.image // each cake object includes its specific image path
 }));
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,7 +86,7 @@ const Navbar = () => {
               <img src={cake.image} alt={cake.name} />
               <div className="search-result-info">
                 <h3>{cake.name}</h3>
-                <p>${cake.price.toFixed(2)}</p>
+                <p>₹{cake.price.toFixed(2)}</p>
               </div>
             </div>
           ))

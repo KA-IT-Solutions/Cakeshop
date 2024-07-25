@@ -1,29 +1,128 @@
 [
     {
+      "name": "White Forrest",
+      "price": 350,
+      "image": "/RegularCake-images/RegularCake1.png"
+    },
+    {
+      "name": "Black Velvet",
+      "price": 350,
+      "image": "/RegularCake-images/RegularCake2.png"
+    },
+    {
+      "name": "Red Velvet",
+      "price": 400,
+      "image": "/RegularCake-images/RegularCake3.png"
+    },
+    {
+      "name": "Rose Gulkand",
+      "price": 350,
+      "image": "/RegularCake-images/RegularCake4.png"
+    },
+    {
+      "name": "Pineapple Cake",
+      "price": 300,
+      "image": "/RegularCake-images/RegularCake5.png"
+    },
+    {
+      "name": "Butter Scoth",
+      "price": 300,
+      "image": "/RegularCake-images/RegularCake6.png"
+    },
+    {
+      "name": "Rus Malai",
+      "price": 400,
+      "image": "/RegularCake-images/RegularCake7.png"
+    },
+    {
+      "name": "Chocolate Crunch",
+      "price": 350,
+      "image": "/RegularCake-images/RegularCake9.png"
+    },
+    {
+      "name": "Chocolate Truffle Cake",
+      "price": 350,
+      "image": "/RegularCake-images/RegularCake4.png"
+    },
+    {
+      "name": "Pineapple Cake",
+      "price": 400,
+      "image": "/RegularCake-images/RegularCake10.png"
+    },
+    {
+      "name": "Black Forrest",
+      "price": 300,
+      "image": "/RegularCake-images/RegularCake11.png"
+    },
+    {
+      "name": "White Forrest",
+      "price": 350,
+      "image": "/RegularCake-images/RegularCake12.png"
+    },
+    {
+      "name": "Chocolate Chips",
+      "price": 350,
+      "image": "/RegularCake-images/RegularCake13.png"
+    },
+    {
+      "name": "Kitkat Chocolate",
+      "price": 350,
+      "image": "/RegularCake-images/RegularCake14.png"
+    },
+    {
+      "name": "Red Velvet",
+      "price": 400,
+      "image": "/RegularCake-images/RegularCake15.png"
+    },
+    {
+      "name": "Miled Chocalate",
+      "price": 350,
+      "image": "/RegularCake-images/RegularCake16.png"
+    },
+    {
       "name": "Chocolate Cake",
-      "price": 25,
-      "image": "cake1.webp"
+      "price": 250,
+      "image": "/RegularCake-images/RegularCake18.png"
     },
     {
-      "name": "Vanilla Cake",
-      "price": 20,
-      "image": "cake1.webp"
+      "name": "Strawberry Chocolate",
+      "price": 350,
+      "image": "/RegularCake-images/RegularCake19.png"
     },
     {
-      "name": "Strawberry Cake",
-      "price": 30,
-      "image": "cake1.webp"
+      "name": "Black Velvet",
+      "price": 380,
+      "image": "/RegularCake-images/RegularCake20.png"
     },
     {
-      "name": "Red Velvet Cake",
-      "price": 35,
-      "image": "cake1.webp"
+      "name": "Kaju Malai",
+      "price": 400,
+      "image": "/RegularCake-images/RegularCake21.png"
     },
     {
-      "name": "Lemon Cake",
-      "price": 22,
-      "image": "cake1.webp"
+      "name": "Rich Coffee Chocalate",
+      "price": 400,
+      "image": "/RegularCake-images/RegularCake22.png"
+    },
+    {
+      "name": "Chocolate Mocca",
+      "price": 350,
+      "image": "/RegularCake-images/RegularCake23.png"
+    },
+    {
+      "name": "Almond Trffle",
+      "price": 400,
+      "image": "/RegularCake-images/RegularCake24.png"
+    },
+    {
+      "name": "Rus Malai",
+      "price": 400,
+      "image": "/RegularCake-images/RegularCake25.png"
     }
+    
+    
+    
+    
   ]
 
 
