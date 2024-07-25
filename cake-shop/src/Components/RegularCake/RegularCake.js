@@ -35,10 +35,10 @@ const RegularCake = () => {
   return (
 
     <>
-      <div className="regular-cake-hero">
-        <div className="regular-cake-hero-content">
-          <h1 className="regular-cake-hero-h1">Taste the Magic of Our Cakes</h1>
-          <p className="regular-cake-hero-p">The Perfect Cake for Every Occasion</p>
+      <div className="regular-cake-hero1">
+        <div className="regular-cake-hero1-content">
+          <h1 className="regular-cake-hero1-h1">Taste the Magic of Our Cakes</h1>
+          <p className="regular-cake-hero1-p">The Perfect Cake for Every Occasion</p>
         </div>
       </div>
       <div className="cake-shop">

@@ -431,7 +431,1003 @@
     "price": 400,
     "quantity": "1 kg",
     "image": "/CustomizeCake-images/CusCake54.png"
+  },
+  {
+    "id": 55,
+    "name": "White Forrest",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake55.png"
+  },
+  {
+    "id": 56,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake56.png"
+  },
+  {
+    "id": 57,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake57.png"
+  },
+  {
+    "id": 58,
+    "name": "Rose Gulkand",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake58.png"
+  },
+  {
+    "id": 59,
+    "name": "Pineapple Cake",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake59.png"
+  },
+  {
+    "id": 60,
+    "name": "Butter Scoth",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake60.png"
+  },
+  {
+    "id": 61,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake61.png"
+  },
+  {
+    "id": 62,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake62.png"
+  },
+  {
+    "id": 63,
+    "name": "Chocolate Crunch",
+    "category": "Anniversary",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake63.png"
+  },
+  {
+    "id": 64,
+    "name": "Chocolate Truffle Cake",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake10.png"
+  },
+  {
+    "id": 65,
+    "name": "Black Forrest",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake65.png"
+  },
+  {
+    "id": 66,
+    "name": "White Forrest",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake66.png"
+  },
+  {
+    "id": 67,
+    "name": "Chocolate Chips",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake67.png"
+  },
+  {
+    "id": 68,
+    "name": "Kitkat Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake68.png"
+  },
+  {
+    "id": 69,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake69.png"
+  },
+  {
+    "id": 70,
+    "name": "Miled Chocalate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake70.png"
+  },
+  {
+    "id": 71,
+    "name": "Chocolate Crunch",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake71.png"
+  },
+  {
+    "id": 72,
+    "name": "Chocolate Cake",
+    "category": "Anniversary",
+    "price": 250,
+    "quantity": "2 kg",
+    "image": "/CustomizeCake-images/CusCake72.png"
+  },
+  {
+    "id": 73,
+    "name": "Strawberry Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake73.png"
+  },
+  {
+    "id": 74,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 380,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake74.png"
+  },
+  {
+    "id": 75,
+    "name": "Kaju Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake75.png"
+  },
+  {
+    "id": 76,
+    "name": "Rich Coffee Chocalate",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake76.png"
+  },
+  {
+    "id": 77,
+    "name": "Chocolate Mocca",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake77.png"
+  },
+  {
+    "id": 78,
+    "name": "Almond Trffle",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake78.png"
+  },
+  {
+    "id": 79,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake79.png"
+  },
+  {
+    "id": 80,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake80.png"
+  },
+  {
+    "id": 81,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake81.png"
+  },
+  {
+    "id": 82,
+    "name": "White Forrest",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake82.png"
+  },
+  {
+    "id": 83,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake83.png"
+  },
+  {
+    "id": 84,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake84.jpeg"
+  },
+  {
+    "id": 85,
+    "name": "Rose Gulkand",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake85.jpeg"
+  },
+  {
+    "id": 86,
+    "name": "Pineapple Cake",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake86.jpeg"
+  },
+  {
+    "id": 87,
+    "name": "Butter Scoth",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake87.jpeg"
+  },
+  {
+    "id": 88,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake88.jpeg"
+  },
+  {
+    "id": 89,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake89.jpeg"
+  },
+  {
+    "id": 90,
+    "name": "Chocolate Crunch",
+    "category": "Anniversary",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake90.jpeg"
+  },
+  {
+    "id": 91,
+    "name": "Chocolate Truffle Cake",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake91.jpeg"
+  },
+  {
+    "id": 92,
+    "name": "Black Forrest",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake92.jpeg"
+  },
+  {
+    "id": 93,
+    "name": "White Forrest",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake93.jpeg"
+  },
+  {
+    "id": 94,
+    "name": "Chocolate Chips",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake94.jpeg"
+  },
+  {
+    "id": 95,
+    "name": "Kitkat Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake95.jpeg"
+  },
+  {
+    "id": 96,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake96.jpeg"
+  },
+  {
+    "id": 97,
+    "name": "Miled Chocalate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake97.jpeg"
+  },
+  {
+    "id": 98,
+    "name": "Chocolate Crunch",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake98.jpeg"
+  },
+  {
+    "id": 99,
+    "name": "Chocolate Cake",
+    "category": "Anniversary",
+    "price": 250,
+    "quantity": "2 kg",
+    "image": "/CustomizeCake-images/CusCake99.jpeg"
+  },
+  {
+    "id": 100,
+    "name": "Strawberry Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake100.jpeg"
+  },
+  {
+    "id": 101,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 380,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake101.jpeg"
+  },
+  {
+    "id": 102,
+    "name": "Kaju Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake102.jpeg"
+  },
+  {
+    "id": 103,
+    "name": "Rich Coffee Chocalate",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake103.jpeg"
+  },
+  {
+    "id": 104,
+    "name": "Chocolate Mocca",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake104.jpeg"
+  },
+  {
+    "id": 105,
+    "name": "Almond Trffle",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake104.jpeg"
+  },
+  {
+    "id": 106,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake106.jpeg"
+  },
+  {
+    "id": 107,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake107.jpeg"
+  },
+  {
+    "id": 108,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake108.jpeg"
+  },
+  {
+    "id": 109,
+    "name": "Rose Gulkand",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake109.jpeg"
+  },
+  {
+    "id": 110,
+    "name": "Pineapple Cake",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake110.jpeg"
+  },
+  {
+    "id": 111,
+    "name": "Butter Scoth",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake111.jpeg"
+  },
+  {
+    "id": 112,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake112.jpeg"
+  },
+  {
+    "id": 113,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake113.jpeg"
+  },
+  {
+    "id": 114,
+    "name": "Chocolate Crunch",
+    "category": "Anniversary",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake114.jpeg"
+  },
+  {
+    "id": 115,
+    "name": "Chocolate Truffle Cake",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake115.jpeg"
+  },
+  {
+    "id": 116,
+    "name": "Black Forrest",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake116.jpeg"
+  },
+  {
+    "id": 117,
+    "name": "White Forrest",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake117.jpeg"
+  },
+  {
+    "id": 118,
+    "name": "Chocolate Chips",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake118.jpeg"
+  },
+  {
+    "id": 119,
+    "name": "Kitkat Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake119.jpeg"
+  },
+  {
+    "id": 120,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake120.jpeg"
+  },
+  {
+    "id": 121,
+    "name": "Miled Chocalate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake121.jpeg"
+  },
+  {
+    "id": 122,
+    "name": "Chocolate Crunch",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake122.jpeg"
+  },
+  {
+    "id": 123,
+    "name": "Chocolate Cake",
+    "category": "Anniversary",
+    "price": 250,
+    "quantity": "2 kg",
+    "image": "/CustomizeCake-images/CusCake123.jpeg"
+  },
+  {
+    "id": 124,
+    "name": "Strawberry Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake124.jpeg"
+  },
+  {
+    "id": 125,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 380,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake125.jpeg"
+  },
+  {
+    "id": 126,
+    "name": "Kaju Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake126.jpeg"
+  },
+  {
+    "id": 127,
+    "name": "Rich Coffee Chocalate",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake127.jpeg"
+  },
+  {
+    "id": 128,
+    "name": "Chocolate Mocca",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake128.jpeg"
+  },
+  {
+    "id": 129,
+    "name": "Almond Trffle",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake129.jpeg"
+  },
+  {
+    "id": 130,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake130.jpeg"
+  },
+  {
+    "id": 131,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake131.jpeg"
+  },
+  {
+    "id": 132,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake132.jpeg"
+  },
+  {
+    "id": 133,
+    "name": "Chocolate Cake",
+    "category": "Anniversary",
+    "price": 250,
+    "quantity": "2 kg",
+    "image": "/CustomizeCake-images/CusCake133.jpeg"
+  },
+  {
+    "id": 134,
+    "name": "Strawberry Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake134.jpeg"
+  },
+  {
+    "id": 135,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 380,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake135.jpeg"
+  },
+  {
+    "id": 136,
+    "name": "Kaju Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake136.jpeg"
+  },
+  {
+    "id": 137,
+    "name": "Rich Coffee Chocalate",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake137.jpeg"
+  },
+  {
+    "id": 138,
+    "name": "Chocolate Mocca",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake138.jpeg"
+  },
+  {
+    "id": 139,
+    "name": "Almond Trffle",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake139.jpeg"
+  },
+  {
+    "id": 140,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake140.jpeg"
+  },
+  {
+    "id": 141,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake141.jpeg"
+  },
+  {
+    "id": 142,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake142.jpeg"
+  },
+  {
+    "id": 143,
+    "name": "Rose Gulkand",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake143.jpeg"
+  },
+  {
+    "id": 144,
+    "name": "Pineapple Cake",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake144.jpeg"
+  },
+  {
+    "id": 145,
+    "name": "Butter Scoth",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake145.jpeg"
+  },
+  {
+    "id": 146,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake146.jpeg"
+  },
+  {
+    "id": 147,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake147.jpeg"
+  },
+  {
+    "id": 148,
+    "name": "Chocolate Crunch",
+    "category": "Anniversary",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake148.jpeg"
+  },
+  {
+    "id": 149,
+    "name": "Chocolate Truffle Cake",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake149.jpeg"
+  },
+  {
+    "id": 150,
+    "name": "Black Forrest",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake150.jpeg"
+  },
+  {
+    "id": 151,
+    "name": "White Forrest",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake151.jpeg"
+  },
+  {
+    "id": 152,
+    "name": "Chocolate Chips",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake152.jpeg"
+  },
+  {
+    "id": 153,
+    "name": "Kitkat Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake153.jpeg"
+  },
+  {
+    "id": 154,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake154.jpeg"
+  },
+  {
+    "id": 155,
+    "name": "Miled Chocalate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake155.jpeg"
+  },
+  {
+    "id": 156,
+    "name": "Chocolate Crunch",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake156.jpeg"
+  },
+  {
+    "id": 157,
+    "name": "Chocolate Cake",
+    "category": "Anniversary",
+    "price": 250,
+    "quantity": "2 kg",
+    "image": "/CustomizeCake-images/CusCake157.jpeg"
+  },
+  {
+    "id": 158,
+    "name": "Strawberry Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake158.jpeg"
+  },
+  {
+    "id": 159,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 380,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake159.jpeg"
+  },
+  {
+    "id": 160,
+    "name": "Kaju Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake160.jpeg"
+  },
+  {
+    "id": 161,
+    "name": "Rich Coffee Chocalate",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake161.jpeg"
+  },
+  {
+    "id": 162,
+    "name": "Chocolate Mocca",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake162.jpeg"
+  },
+  {
+    "id": 163,
+    "name": "Almond Trffle",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake163.jpeg"
+  },
+  {
+    "id": 164,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake164.jpeg"
+  },
+  {
+    "id": 165,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake165.jpeg"
+  },
+  {
+    "id": 166,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake166.jpeg"
+  },
+  {
+    "id": 169,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake169.jpeg"
+  },
+  {
+    "id": 170,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake170.jpeg"
+  },
+  {
+    "id": 171,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake171.jpeg"
+  },
+  {
+    "id": 172,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake172.jpeg"
+  },
+  {
+    "id": 173,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake173.jpeg"
+  },
+  {
+    "id": 174,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake174.jpeg"
+  },
+  {
+    "id": 175,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake175.jpeg"
+  },
+  {
+    "id": 176,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake176.jpeg"
+  },
+  {
+    "id": 177,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake177.jpeg"
+  },
+  {
+    "id": 178,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake178.jpeg"
+  },
+  {
+    "id": 179,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": "1 kg",
+    "image": "/CustomizeCake-images/CusCake179.png"
   }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
 ]

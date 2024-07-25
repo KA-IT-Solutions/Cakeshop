@@ -3,7 +3,7 @@
 /* RegularCake.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.regular-cake-hero {
+.regular-cake-hero1 {
   background-image: url('./RegularCake-image/Regular-image.jpg');
   height: 60vh;
   background-size: cover;
@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.regular-cake-hero::before {
+.regular-cake-hero1::before {
   content: '';
   position: absolute;
   top: 0;
@@ -30,21 +30,21 @@
   animation: fadeInBackground 3s ease-in-out;
 }
 
-.regular-cake-hero-content {
+.regular-cake-hero1-content {
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.regular-cake-hero-h1 {
+.regular-cake-hero1-h1 {
   font-size: 3rem;
   margin: 0;
   opacity: 0;
   animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite, fadeIn 1s ease-in-out 1s forwards;
 }
 
-.regular-cake-hero-p {
+.regular-cake-hero1-p {
   font-size: 1.5rem;
   margin: 1rem 0;
   opacity: 0;
@@ -86,29 +86,29 @@
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
-  .regular-cake-hero {
+  .regular-cake-hero1 {
     height: 40vh;
   }
 
-  .regular-cake-hero-h1 {
+  .regular-cake-hero1-h1 {
     font-size: 2rem;
   }
 
-  .regular-cake-hero-p {
+  .regular-cake-hero1-p {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .regular-cake-hero {
+  .regular-cake-hero1 {
     height: 40vh;
   }
 
-  .regular-cake-hero-h1 {
+  .regular-cake-hero1-h1 {
     font-size: 1.5rem;
   }
 
-  .regular-cake-hero-p {
+  .regular-cake-hero1-p {
     font-size: 0.875rem;
   }
 }
