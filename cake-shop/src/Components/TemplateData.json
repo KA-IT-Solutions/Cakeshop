@@ -57,7 +57,7 @@
     {
       "name": "White Forrest",
       "price": 350,
-      "image": "/RegularCake-images/RegularCake12.png"
+      "image": "/RegularCake-images/RegularCake12.jpeg"
     },
     {
       "name": "Chocolate Chips",
@@ -77,7 +77,7 @@
     {
       "name": "Miled Chocalate",
       "price": 350,
-      "image": "/RegularCake-images/RegularCake16.png"
+      "image": "/RegularCake-images/RegularCake16.jpeg"
     },
     {
       "name": "Chocolate Cake",
@@ -107,17 +107,17 @@
     {
       "name": "Chocolate Mocca",
       "price": 350,
-      "image": "/RegularCake-images/RegularCake23.png"
+      "image": "/RegularCake-images/RegularCake23.jpeg"
     },
     {
       "name": "Almond Trffle",
       "price": 400,
-      "image": "/RegularCake-images/RegularCake24.png"
+      "image": "/RegularCake-images/RegularCake24.jpg"
     },
     {
       "name": "Rus Malai",
       "price": 400,
-      "image": "/RegularCake-images/RegularCake25.png"
+      "image": "/RegularCake-images/RegularCake25.jpg"
     }
     
     
