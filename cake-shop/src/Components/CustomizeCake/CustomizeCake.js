@@ -101,6 +101,8 @@ const CustomizeCake = () => {
             <option value="aniversary">Anniversary</option>
             <option value="Birthday">Birthday Party</option>
             <option value="Customized">Customized Cake</option>
+            <option value="Boys">Boys Cake</option>
+            <option value="Girls">Girls Cake</option>
             {/* Add more options as needed */}
           </select>
         </div>
