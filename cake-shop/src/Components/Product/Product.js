@@ -1,5 +1,6 @@
 
 import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Product.css'
 import Regular from './Regular.png'
 import Anivarsary from './Anivarsary.jpg'
@@ -18,7 +19,10 @@ import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg
 
 const Product = () => {
 
+
+
   const sliderRef = useRef(null);
+  const navigate = useNavigate();
 
   const scrollLeft = () => {
     sliderRef.current.scrollLeft -= sliderRef.current.offsetWidth;
@@ -29,47 +33,93 @@ const Product = () => {
   };
 
 
-  const cards = [
-    {
-      image: Regular,
-      title: 'Regular',
-      category: "Birthday Party",
-      price: 150,
-      quantity: "1 kg"
-    },
-    {
-      image: Anivarsary,
-      title: 'Anivarsary'
-    },
-    {
-      image: Brithday,
-      title: 'Brithday'
-    },
-    {
-      image: Customise,
-      title: 'Customise'
-    },
-  ]
+
+  // const cards = [
+  //   {
+  //     image: Regular,
+  //     title: 'Regular',
+  //     category: "Birthday Party",
+  //     price: 150,
+  //     quantity: "1 kg"
+  //   },
+  //   {
+  //     image: Anivarsary,
+  //     title: 'Anivarsary',
+  //     category: 'aniversary'
+  //   },
+  //   {
+  //     image: Brithday,
+  //     title: 'Brithday',
+  //     category: 'Birthday'
+  //   },
+  //   {
+  //     image: Customise,
+  //     title: 'Customise'
+  //   },
+  // ];
+
+  const handleCategoryClick = (category) => {
+    navigate(`/regularcake?category=${encodeURIComponent(category)}`);
+  };
+
+  const handleCustomiseClick = (category) => {
+    navigate(`/customizecake?category=${encodeURIComponent(category)}`);
+  };
 
   return (
     <>
 
 
       <div className='product'>
-        <h1>
-          Popular Categories</h1>
+        <h1>Popular Categories</h1>
       </div>
-      <div className='categries' >
+      {/* <div className='categories'>
         <div className="card-container">
           {cards.map((card, index) => (
             <div className="card" key={index}>
               <img src={card.image} alt={card.title} className="card-image" />
               <h3 className="card-title">{card.title}</h3>
-
+              <button onClick={() => handleCategoryClick(card.category)}>
+                View {card.category}
+              </button>
             </div>
           ))}
         </div>
+      </div> */}
+
+      <div className='categories'>
+        <div className="card-container">
+          <div className="card">
+            <img src={Regular} alt="Regular" className="card-image" />
+            <h3 className="card-title">Regular</h3>
+            <button className="card-button" onClick={() => handleCategoryClick('Birthday Party')}>
+              View Regular
+            </button>
+          </div>
+          <div className="card">
+            <img src={Anivarsary} alt="Anivarsary" className="card-image" />
+            <h3 className="card-title">Annivarsary</h3>
+            <button className="card-button" onClick={() => handleCustomiseClick('Aniversary')}>
+              View Anniversary
+            </button>
+          </div>
+          <div className="card">
+            <img src={Brithday} alt="Birthday" className="card-image" />
+            <h3 className="card-title">Brithday</h3>
+            <button className="card-button" onClick={() => handleCustomiseClick('Birthday')}>
+              View Birthday
+            </button>
+          </div>
+          <div className="card">
+            <img src={Customise} alt="Customise" className="card-image" />
+            <h3 className="card-title">Customised</h3>
+            <button className="card-button" onClick={() => handleCustomiseClick('Customized')}>
+              View Customise
+            </button>
+          </div>
+        </div>
       </div>
+
 
 
 
@@ -142,7 +192,7 @@ const Product = () => {
 
 
 
-      
+
 
       {/* -------------------------------- */}
 
@@ -162,7 +212,7 @@ const Product = () => {
                   <span className="discounted-price">₹{cake.price}</span>
                 </p>
                 <button className="whatsapp-button">
-                <FaShoppingBasket /> Buy on WhatsApp
+                  <FaShoppingBasket /> Buy on WhatsApp
                 </button>
               </div>
             </div>
@@ -218,8 +268,8 @@ const Product = () => {
         </div>
       </div> */}
 
-<div className='cake'>
-        
+      <div className='cake'>
+
       </div>
 
       <div className='product'>
@@ -231,7 +281,7 @@ const Product = () => {
 
 
 
-        
+
       <div className="slider-wrapper">
         <button className="scroll-button" onClick={scrollLeft}>‹</button>
         <div className="slider-container" ref={sliderRef}>
@@ -246,7 +296,7 @@ const Product = () => {
                   <span className="discounted-price">₹{cake.price}</span>
                 </p>
                 <button className="whatsapp-button">
-                <FaShoppingBasket /> Buy on WhatsApp
+                  <FaShoppingBasket /> Buy on WhatsApp
                 </button>
               </div>
             </div>
@@ -257,11 +307,11 @@ const Product = () => {
 
 
 
-     <div className='cake1'>
+      <div className='cake1'>
 
-     </div>
+      </div>
 
-      
+
       <div className='product'>
         <h1>
           Contact Us</h1>

@@ -116,6 +116,36 @@
   align-items: start;
 }
 
+
+
+.card-button {
+  /* Add responsive styles for button */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background-color: #805652;
+}
+.card-button:hover{
+  background-color: #874740;
+}
+
+@media (max-width: 768px) {
+  .card-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .card-container {

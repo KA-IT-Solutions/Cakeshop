@@ -1,11 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { FaShoppingBasket } from 'react-icons/fa';
+import { useLocation,  useNavigate } from 'react-router-dom';
 import './CustomizeCake.css';
 import cakesData1 from '../CustomizeCake.json'; // Assuming cakes.json is in the same directory
 
 const CustomizeCake = () => {
+  const navigate = useNavigate();
   const [filters, setFilters] = useState({ name: '', price: '', quantity: '', category: '' });
   const [filteredCakes, setFilteredCakes] = useState(cakesData1);
+  const location = useLocation();
+
+
+  useEffect(() => {
+    const query = new URLSearchParams(location.search);
+    const category = query.get('category') || '';
+    setFilters({ ...filters, category });
+  }, [location.search]);
+
 
   useEffect(() => {
     let filtered = cakesData1;
@@ -64,8 +75,9 @@ const CustomizeCake = () => {
           </select>
           <select onChange={(e) => setFilters({ ...filters, category: e.target.value })}>
             <option value="">Select Category</option>
-            <option value="anniversary">Anniversary</option>
-            <option value="birthday party">Birthday Party</option>
+            <option value="aniversary">Anniversary</option>
+            <option value="Birthday">Birthday Party</option>
+            <option value="Customized">Customized Cake</option>
             {/* Add more options as needed */}
           </select>
         </div>
