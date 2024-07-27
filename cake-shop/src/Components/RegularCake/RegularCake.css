@@ -228,3 +228,22 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
+
+/* --------------heading none logic applied------- */
+.regular-cake-hero1-content.hidden h1,
+.regular-cake-hero1-content.hidden p {
+  display: none;
+}
+
+/* Example menu icon styling */
+.menu-icon {
+  display: none;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    /* Add your styling for the menu icon */
+  }
+}

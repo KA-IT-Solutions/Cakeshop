@@ -1,5 +1,5 @@
 .navbar {
-  background: rgb(70,33,7); /* Cream color */
+  background: rgb(4,12,21); /* Cream color */
   height: 60px;
   display: flex;
   justify-content: center;
@@ -63,7 +63,7 @@
 }
 
 .nav-item:hover {
-  color: rgb(163, 153, 153);
+  color: rgb(241, 194, 227);
   transition: all 0.2s ease-out;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .search-bar-desktop button {
-  background: #330303;
+  background: rgb(4,12,21);
   color: #fff;
   border: none;
   padding: 8px;
@@ -143,11 +143,11 @@
     top: -100%;
     /* opacity: 1; */
     transition: all 0.5s ease;
-    background: rgba(92, 29, 29, 0.9); /* Transparent background */
+    background: rgb(4,12,21); 
   }
 
   .nav-menu.active {
-    background: rgba(45, 2, 2, 0.9); /* Transparent background */
+    background: rgb(4,12,21); /* Transparent background */
     left: 0;
     /* opacity: 1; */
     transition: all 0.5s ease;

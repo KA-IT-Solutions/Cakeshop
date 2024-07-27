@@ -75,7 +75,7 @@ h1 {
   margin-top: 1rem;
 } */
 
-.gmap-frame {
+.gmap-frame1 {
   height: 400px; /* Adjust height as needed */
   width: 100%;
   border: 0;
@@ -96,7 +96,7 @@ h1 {
     margin-bottom: 1rem;
   }
 
-  .map-section {
+  .map-section1 {
     width: 100%;
   }
 
@@ -118,10 +118,11 @@ h1 {
     padding: 0.8rem;
     width: 70%;
   }
-  .gmap-frame{
-    height: 400px;
-    width: 350px;
-    margin-left: -60px;
+  .gmap-frame1{
+    height: 300px;
+    width: 330px;
+    margin-right: 60px;
+    margin-left: -80px;
     
    
   }

@@ -10,6 +10,29 @@ const CustomizeCake = () => {
   const [filteredCakes, setFilteredCakes] = useState(cakesData1);
   const location = useLocation();
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const menuIcon = document.querySelector('.menu-icon');
+    const handleMenuClick = () => {
+      setIsMenuOpen((prev) => !prev);
+    };
+
+    const handleClickOutside = (event) => {
+      if (!menuIcon.contains(event.target) && isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    menuIcon.addEventListener('click', handleMenuClick);
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      menuIcon.removeEventListener('click', handleMenuClick);
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
 
   useEffect(() => {
     const query = new URLSearchParams(location.search);
@@ -47,7 +70,7 @@ const CustomizeCake = () => {
 
     <>
       <div className="regular-cake-hero">
-        <div className="regular-cake-hero-content">
+        <div className={`regular-cake-hero-content ${isMenuOpen ? 'hidden' : ''}`}>
           <h1 className="regular-cake-hero-h1">Taste the Magic of Our Cakes</h1>
           <p className="regular-cake-hero-p">The Perfect Cake for Every Occasion</p>
         </div>

@@ -164,4 +164,30 @@
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
   }
+  
 }
+
+
+
+
+/* -----------------display heading none css start---------- */
+
+
+.hero-content.hidden h1,
+.hero-content.hidden p {
+  display: none;
+}
+
+/* Example menu icon styling */
+.menu-icon {
+  display: none;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    /* Add your styling for the menu icon */
+  }
+}
+

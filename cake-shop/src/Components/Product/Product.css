@@ -124,11 +124,13 @@
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 1rem;
+  margin-top: 1rem;
+  border: none;
   border-radius: 0.5rem;
-  background-color: #805652;
+  background-color: white;
 }
 .card-button:hover{
-  background-color: #874740;
+  background-color: #f8edf8;
 }
 
 @media (max-width: 768px) {
@@ -259,11 +261,11 @@
   }
 
 .cake-details {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .price {
-  font-size: 18px;
+  font-size: 20px;
   color: #333;
 }
 
@@ -334,63 +336,6 @@
 
 
 
-/* CakeSlider.css */
-/* 
-.cake-shop {
-  margin: 20px;
-}
-
-.cake-cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cake-card {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
-  box-sizing: border-box;
-  background: #fff;
-  margin: 10px;
-}
-
-.cake-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.cake-details {
-  margin-top: 10px;
-}
-
-.price {
-  margin-top: 10px;
-}
-
-.original-price {
-  text-decoration: line-through;
-  margin-right: 5px;
-}
-
-.whatsapp-button {
-  background-color: #25D366;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.whatsapp-button svg {
-  margin-right: 5px;
-} */
-
-
 /* ------------------------------------ */
 
 .slider-wrapper {
@@ -417,7 +362,7 @@
   width: 100%;
 }
 
-.cake-card {
+.cake-card{
   flex: 0 0 auto;
   width: 200px; /* Reduced width */
   margin: 0 6px; /* Reduced margin */
@@ -439,30 +384,30 @@
   border-top-right-radius: 8px;
 }
 
-.cake-details {
+.cake-details{
   padding: 8px; /* Reduced padding */
 }
 
-.price {
+.price{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 4px 0; /* Reduced margin */
 }
 
-.original-price {
+.original-price{
   text-decoration: line-through;
   color: #888;
   font-size: 0.7rem; /* Reduced font size */
 }
 
-.discounted-price {
+.discounted-price{
   font-weight: bold;
   color: #e74c3c;
   font-size: 0.8rem; /* Reduced font size */
 }
 
-.whatsapp-button {
+.whatsapp-button{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -476,12 +421,12 @@
   font-size: 0.7rem; /* Reduced font size */
 }
 
-.whatsapp-button:hover {
+.whatsapp-button1:hover {
   background-color: #1DA851;
 }
 
 @media (max-width: 768px) {
-  .cake-card {
+  .cake-card{
     width: 160px; /* Further reduced width */
   }
 
@@ -490,23 +435,23 @@
     width: 100%; /* Further reduced height */
   }
 
-  .cake-details {
+  .cake-details{
     padding: 6px; /* Further reduced padding */
   }
 
-  .price {
+  .price{
     margin: 2px 0; /* Further reduced margin */
   }
 
-  .original-price {
+  .original-price{
     font-size: 0.6rem; /* Further reduced font size */
   }
 
-  .discounted-price {
+  .discounted-price{
     font-size: 0.7rem; /* Further reduced font size */
   }
 
-  .whatsapp-button {
+  .whatsapp-button{
     padding: 4px; /* Further reduced padding */
     font-size: 0.6rem; /* Further reduced font size */
   }
@@ -577,5 +522,100 @@
   .cake1{
     height: 150px;
     width: 100%;
+  }
+}
+
+
+/* ----------------contact css start------------ */
+
+/* Product.css */
+
+/* Default styles for larger screens (desktop) */
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.map-section {
+  flex: 1;
+  margin-right: 20px;
+ /* padding-left: 10rem; */
+}
+
+.gmap-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contact-icon-info {
+  flex: 1;
+  padding-left: 5rem;
+}
+
+.contact-icon-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-us-info {
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .gmap-frame {
+    width: 100%;
+    height: 300px;
+  }
+
+  .contact-icon-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-icon {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .contact-icon-info h2 {
+    font-size: 1.2rem;
+  }
+  .gmap-frame{
+    padding-left: 3.6rem;
+  }
+
+  .contact-icon-info {
+    /* flex: 1; */
+    padding-left: 0;
+  }
+
+  .contact-icon {
+    font-size: 0.9rem;
+  }
+  .map-section{
+    padding-left: 5rem;
+  }
+
+  .gmap-frame {
+    height: 250px;
   }
 }
