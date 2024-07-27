@@ -122,7 +122,7 @@
 
 
 /* --------------------------------filters css start---------------------- */
-.cake-shop {
+/* .cake-shop {
   padding: 20px;
 }
 
@@ -132,12 +132,12 @@
   gap: 10px;
   margin-bottom: 20px;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* Enables momentum scrolling in iOS */
-  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -webkit-overflow-scrolling: touch; 
+  scrollbar-width: none; 
 }
 
 .cake-shop .filters::-webkit-scrollbar {
-  display: none; /* Hides scrollbar in WebKit browsers */
+  display: none; 
 }
 
 .cake-shop .filters select {
@@ -175,10 +175,6 @@
 .cake-shop .regular-cake-details {
   margin-top: 10px;
 
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center; */
 }
 
 .cake-shop .regular-price {
@@ -206,7 +202,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 auto; /* Center the button horizontally */
+  margin: 0 auto; 
 }
 
 .cake-shop .regular-whatsapp-button svg {
@@ -217,7 +213,7 @@
   background-color: #1da851;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .cake-shop .filters {
     flex-direction: row;
@@ -226,13 +222,13 @@
 
   .cake-shop .filters-item {
     flex: 0 0 auto;
-    margin-right: 1rem; /* Optional: Add space between items */
+    margin-right: 1rem;
   }
 
   .cake-shop .regular-cake-cards {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
-}
+} */
 
 /* --------------hide heading text----------- */
 
