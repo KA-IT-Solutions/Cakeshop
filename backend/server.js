@@ -53,7 +53,7 @@ function sendMail(name , email , message){
 app.post('/send', (req, res) => {
     const { name, email, message } = req.body;
     sendMail(name,email,message);
-
+    res.json('mail send')
    
 
 
