@@ -2,12 +2,12 @@
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Product.css'
-import Regular from './RegularCake6.png'
+import Regular from './CusCake103.jpeg'
 import Anivarsary from './CusCake99.jpeg'
 import Brithday from './Birthday.jpeg'
 import Customise from './CusCake100.jpeg'
 import cakesData from '../RegularData.json';
-import customeData from'../CustomizeCake.json';
+import customeData from '../CustomizeCake.json';
 import { FaShoppingBasket } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
@@ -46,7 +46,7 @@ const Product = () => {
       <div className='product'>
         <h1>Popular Categories</h1>
       </div>
-      
+
 
       <div className='categories'>
         <div className="card-container">
@@ -92,26 +92,32 @@ const Product = () => {
       {/* -------------------------------- */}
 
 
-
+      
       <div className="slider-wrapper">
+      
         <button className="scroll-button" onClick={scrollLeft}>‹</button>
+       
         <div className="slider-container" ref={sliderRef}>
-          {cakesData.map(cake => (
-            <div key={cake.id} className="cake-card">
-              <img src={cake.image} alt={cake.name} className="cake-image" />
-              <div className="cake-details">
-                <h3>{cake.name}</h3>
-                <p>{cake.quantity}</p>
-                <p className="price">
-                  <span className="original-price">₹{cake.price * 1.2}</span>
-                  <span className="discounted-price">₹{cake.price}</span>
-                </p>
-                <button className="whatsapp-button">
-                  <FaShoppingBasket /> Buy on WhatsApp
-                </button>
+        
+          
+            {cakesData.map(cake => (
+              <div key={cake.id} className="cake-card">
+                <img src={cake.image} alt={cake.name} className="cake-image" />
+                <div className="cake-details">
+                  <h3>{cake.name}</h3>
+                  <p>{cake.quantity}</p>
+                  <p className="price">
+                    <span className="original-price">₹{cake.price * 1.2}</span>
+                    <span className="discounted-price">₹{cake.price}</span>
+                  </p>
+                  <button className="whatsapp-button">
+                    <FaShoppingBasket /> Buy on WhatsApp
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+
+            ))}
+          
         </div>
         <button className="scroll-button" onClick={scrollRight}>›</button>
       </div>

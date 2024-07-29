@@ -233,7 +233,8 @@
   font-size: 16px;
 }
 
-.cake-cards {
+/* ----------------------------------------- */
+/* .cake-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
@@ -289,9 +290,9 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 auto; /* Center the button horizontally */
+  margin: 0 auto;
 
-}
+} */
 
 .whatsapp-button svg {
   margin-right: 5px;
@@ -362,10 +363,10 @@
   width: 100%;
 }
 
-.cake-card{
+/* .cake-card{
   flex: 0 0 auto;
-  width: 200px; /* Reduced width */
-  margin: 0 6px; /* Reduced margin */
+  width: 200px; 
+  margin: 0 6px; 
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -378,52 +379,52 @@
 
 .cake-image {
   width: 100%;
-  height: 120px; /* Reduced height */
+  height: 120px; 
   object-fit: cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
 .cake-details{
-  padding: 8px; /* Reduced padding */
+  padding: 8px;
 }
 
 .price{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 4px 0; /* Reduced margin */
+  margin: 4px 0;
 }
 
 .original-price{
   text-decoration: line-through;
   color: #888;
-  font-size: 0.7rem; /* Reduced font size */
+  font-size: 0.7rem; 
 }
 
 .discounted-price{
   font-weight: bold;
   color: #e74c3c;
-  font-size: 0.8rem; /* Reduced font size */
+  font-size: 0.8rem; 
 }
 
 .whatsapp-button{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px; /* Reduced padding */
+  padding: 6px;
   background-color: #25D366;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 0.7rem; /* Reduced font size */
+  font-size: 0.7rem; 
 }
 
 .whatsapp-button1:hover {
   background-color: #1DA851;
-}
+} */
 
 @media (max-width: 768px) {
   .cake-card{
@@ -490,20 +491,20 @@
   }
 
   .price {
-    margin: 2px 0; /* Further reduced margin */
+    margin: 2px 0;
   }
 
   .original-price {
-    font-size: 0.5rem; /* Further reduced font size */
+    font-size: 0.5rem; 
   }
 
   .discounted-price {
-    font-size: 0.6rem; /* Further reduced font size */
+    font-size: 0.6rem; 
   }
 
   .whatsapp-button {
-    padding: 2px; /* Further reduced padding */
-    font-size: 0.5rem; /* Further reduced font size */
+    padding: 2px; 
+    font-size: 0.5rem; 
   }
   .gmap-frame{
     height: 400px;
@@ -617,5 +618,113 @@
 
   .gmap-frame {
     height: 250px;
+  }
+}
+
+
+
+/* ------------------regular css apply------------ */
+
+
+
+.cake-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 5px;
+  margin-bottom: 20px; /* Space between cards stacked vertically */
+  margin-right: 8px;
+}
+
+.cake-card {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.cake-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.cake-image:hover {
+  transform: scale(1.05);
+}
+
+.cake-details {
+  margin-top: 10px;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; */
+}
+
+.price {
+  font-size: 18px;
+  color: #333;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: lightgrey;
+  margin-right: 5px;
+}
+
+.discounted-price {
+  color: #000;
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+.whatsapp-button svg {
+  margin-right: 5px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1da851;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  
+  
+
+  .cake-card {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+/* --------------heading none logic applied------- */
+.cake-hero1-content.hidden h1,
+.cake-hero1-content.hidden p {
+  display: none;
+}
+
+/* Example menu icon styling */
+.menu-icon {
+  display: none;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    /* Add your styling for the menu icon */
   }
 }

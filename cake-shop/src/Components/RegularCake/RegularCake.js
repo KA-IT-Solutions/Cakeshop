@@ -83,9 +83,26 @@ const RegularCake = ({ cake }) => {
         <div className="filters">
           <select onChange={(e) => setFilters({ ...filters, name: e.target.value })}>
             <option value="">Select Cake Name</option>
-            <option value="lemon">Lemon</option>
-            <option value="chocolate">Chocolate</option>
-            <option value="strawberry">Strawberry</option>
+            <option value="White Forrest">White Forrest</option>
+            <option value="Black Velvet">Black Velvet</option>
+            <option value="Red Velvet">Red Velvet</option>
+            <option value="Rose Gulkand">Rose Gulkand</option>
+            <option value="Pineapple Cake">Pineapple Cake</option>
+            <option value="Butter Scoth">Butter Scoth</option>
+            <option value="Rus Malai">Rus Malai</option>
+            <option value="Chocolate Crunch">Chocolate Crunch</option>
+            <option value="Chocolate Truffle Cake">Chocolate Truffle Cake</option>
+            <option value="Black Forrest">Black Forrest</option>
+            <option value="Chocolate Chips">Chocolate Chips</option>
+            <option value="Kitkat Chocolate">Kitkat Chocolate</option>
+            <option value="Miled Chocalate">Miled Chocalate</option>
+            <option value="Chocolate Cake">Chocolate Cake</option>
+            <option value="Strawberry Chocolate">Strawberry Chocolate</option>
+            <option value="Kaju Malai">Kaju Malai</option>
+            <option value="Rich Coffee Chocalate">Rich Coffee Chocalate</option>
+            <option value="Chocolate Mocca">Chocolate Mocca</option>
+            <option value="Almond Trffle">Almond Trffle</option>
+            <option value="Rus Malai">Rus Malai</option>
             {/* Add more options as needed */}
           </select>
           <select onChange={(e) => setFilters({ ...filters, price: e.target.value })}>
