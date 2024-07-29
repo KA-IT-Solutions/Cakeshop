@@ -26,7 +26,7 @@ const Footer = () => {
             Maharashtra 411014, India
           </p>
           <p className="lilas-font">
-            <FontAwesomeIcon icon={faPhone} /> +91-9096797961
+            <FontAwesomeIcon icon={faPhone} /> +91-9090917171
           </p>
           <p className="lilas-font">
             <FontAwesomeIcon icon={faEnvelope} /> thelilasscakeshops1@gmail.com
