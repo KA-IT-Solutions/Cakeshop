@@ -1,207 +1,415 @@
+[
+  {
+    "id": 1,
+    "name": "White Forrest",
+    "category": "aniversary",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake1.png"
+  },
+  {
+    "id": 2,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake2.png"
+  },
+  {
+    "id": 3,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake3.png"
+  },
+  {
+    "id": 4,
+    "name": "Rose Gulkand",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake4.png"
+  },
+  {
+    "id": 5,
+    "name": "Pineapple Cake",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake5.png"
+  },
+  {
+    "id": 6,
+    "name": "Butter Scoth",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake6.png"
+  },
+  {
+    "id": 7,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake7.png"
+  },
+  {
+    "id": 8,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake8.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Chocolate Crunch",
+    "category": "Anniversary",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake9.png"
+  },
+  {
+    "id": 10,
+    "name": "Chocolate Truffle Cake",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake10.png"
+  },
+  {
+    "id": 11,
+    "name": "Black Forrest",
+    "category": "Birthday Party",
+    "price": 300,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake11.png"
+  },
+  {
+    "id": 12,
+    "name": "White Forrest",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake12.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Chocolate Chips",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake13.png"
+  },
+  {
+    "id": 14,
+    "name": "Kitkat Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake14.png"
+  },
+  {
+    "id": 15,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake15.png"
+  },
+  {
+    "id": 16,
+    "name": "Miled Chocalate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake16.jpeg"
+  },
+  {
+    "id": 17,
+    "name": "Chocolate Crunch",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake17.png"
+  },
+  {
+    "id": 18,
+    "name": "Chocolate Cake",
+    "category": "Anniversary",
+    "price": 250,
+    "quantity": "1/2 kg",
+    "image": "/RegularCake-images/RegularCake18.png"
+  },
+  {
+    "id": 19,
+    "name": "Strawberry Chocolate",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake19.png"
+  },
+  {
+    "id": 20,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 380,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake20.png"
+  },
+  {
+    "id": 21,
+    "name": "Kaju Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake21.png"
+  },
+  {
+    "id": 22,
+    "name": "Rich Coffee Chocalate",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake22.png"
+  },
+  {
+    "id": 23,
+    "name": "Chocolate Mocca",
+    "category": "Birthday Party",
+    "price": 350,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake23.jpeg"
+  },
+  {
+    "id": 24,
+    "name": "Almond Trffle",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake24.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 400,
+    "quantity": " 1/2 kg",
+    "image": "/RegularCake-images/RegularCake25.jpg"
+  },
 
-  [
-    {
-      "id": 1,
-      "name": "White Forrest",
-      "category": "aniversary",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake1.png"
-    },
-    {
-      "id": 2,
-      "name": "Black Velvet",
-      "category": "Birthday Party",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake2.png"
-    },
-    {
-      "id": 3,
-      "name": "Red Velvet",
-      "category": "Birthday Party",
-      "price": 400,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake3.png"
-    },
-    {
-      "id": 4,
-      "name": "Rose Gulkand",
-      "category": "Birthday Party",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake4.png"
-    },
-    {
-      "id": 5,
-      "name": "Pineapple Cake",
-      "category": "Birthday Party",
-      "price": 300,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake5.png"
-    },
-    {
-      "id": 6,
-      "name": "Butter Scoth",
-      "category": "Birthday Party",
-      "price": 300,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake6.png"
-    },
-    {
-      "id": 7,
-      "name": "Rus Malai",
-      "category": "Birthday Party",
-      "price": 400,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake7.png"
-    },
-    {
-      "id": 8,
-      "name": "Rus Malai",
-      "category": "Birthday Party",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake8.jpeg"
-    },
-    {
-      "id": 9,
-      "name": "Chocolate Crunch",
-      "category": "Anniversary",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake9.png"
-    },
-    {
-      "id": 10,
-      "name": "Chocolate Truffle Cake",
-      "category": "Birthday Party",
-      "price": 400,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake10.png"
-    },
-    {
-      "id": 11,
-      "name": "Black Forrest",
-      "category": "Birthday Party",
-      "price": 300,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake11.png"
-    },
-    {
-      "id": 12,
-      "name": "White Forrest",
-      "category": "Birthday Party",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake12.jpeg"
-    },
-    {
-      "id": 13,
-      "name": "Chocolate Chips",
-      "category": "Birthday Party",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake13.png"
-    },
-    {
-      "id": 14,
-      "name": "Kitkat Chocolate",
-      "category": "Birthday Party",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake14.png"
-    },
-    {
-      "id": 15,
-      "name": "Red Velvet",
-      "category": "Birthday Party",
-      "price": 400,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake15.png"
-    },
-    {
-      "id": 16,
-      "name": "Miled Chocalate",
-      "category": "Birthday Party",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake16.jpeg"
-    },
-    {
-      "id": 17,
-      "name": "Chocolate Crunch",
-      "category": "Birthday Party",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake17.png"
-    },
-    {
-      "id": 18,
-      "name": "Chocolate Cake",
-      "category": "Anniversary",
-      "price": 250,
-      "quantity": "2 kg",
-      "image": "/RegularCake-images/RegularCake18.png"
-    },
-    {
-      "id": 19,
-      "name": "Strawberry Chocolate",
-      "category": "Birthday Party",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake19.png"
-    },
-    {
-      "id": 20,
-      "name": "Black Velvet",
-      "category": "Birthday Party",
-      "price": 380,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake20.png"
-    },
-    {
-      "id": 21,
-      "name": "Kaju Malai",
-      "category": "Birthday Party",
-      "price": 400,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake21.png"
-    },
-    {
-      "id": 22,
-      "name": "Rich Coffee Chocalate",
-      "category": "Birthday Party",
-      "price": 400,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake22.png"
-    },
-    {
-      "id": 23,
-      "name": "Chocolate Mocca",
-      "category": "Birthday Party",
-      "price": 350,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake23.jpeg"
-    },
-    {
-      "id": 24,
-      "name": "Almond Trffle",
-      "category": "Birthday Party",
-      "price": 400,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake24.jpg"
-    },
-    {
-      "id": 25,
-      "name": "Rus Malai",
-      "category": "Birthday Party",
-      "price": 400,
-      "quantity": "1 kg",
-      "image": "/RegularCake-images/RegularCake25.jpg"
-    }
-    
-    
-  ]
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": 1,
+    "name": "White Forrest",
+    "category": "aniversary",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake1.png"
+  },
+  {
+    "id": 2,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake2.png"
+  },
+  {
+    "id": 3,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 800,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake3.png"
+  },
+  {
+    "id": 4,
+    "name": "Rose Gulkand",
+    "category": "Birthday Party",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake4.png"
+  },
+  {
+    "id": 5,
+    "name": "Pineapple Cake",
+    "category": "Birthday Party",
+    "price": 600,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake5.png"
+  },
+  {
+    "id": 6,
+    "name": "Butter Scoth",
+    "category": "Birthday Party",
+    "price": 600,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake6.png"
+  },
+  {
+    "id": 7,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 800,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake7.png"
+  },
+  {
+    "id": 8,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake8.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Chocolate Crunch",
+    "category": "Anniversary",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake9.png"
+  },
+  {
+    "id": 10,
+    "name": "Chocolate Truffle Cake",
+    "category": "Birthday Party",
+    "price": 800,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake10.png"
+  },
+  {
+    "id": 11,
+    "name": "Black Forrest",
+    "category": "Birthday Party",
+    "price": 600,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake11.png"
+  },
+  {
+    "id": 12,
+    "name": "White Forrest",
+    "category": "Birthday Party",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake12.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Chocolate Chips",
+    "category": "Birthday Party",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake13.png"
+  },
+  {
+    "id": 14,
+    "name": "Kitkat Chocolate",
+    "category": "Birthday Party",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake14.png"
+  },
+  {
+    "id": 15,
+    "name": "Red Velvet",
+    "category": "Birthday Party",
+    "price": 800,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake15.png"
+  },
+  {
+    "id": 16,
+    "name": "Miled Chocalate",
+    "category": "Birthday Party",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake16.jpeg"
+  },
+  {
+    "id": 17,
+    "name": "Chocolate Crunch",
+    "category": "Birthday Party",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake17.png"
+  },
+  {
+    "id": 18,
+    "name": "Chocolate Cake",
+    "category": "Anniversary",
+    "price": 500,
+    "quantity": "1 kg",
+    "image": "/RegularCake-images/RegularCake18.png"
+  },
+  {
+    "id": 19,
+    "name": "Strawberry Chocolate",
+    "category": "Birthday Party",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake19.png"
+  },
+  {
+    "id": 20,
+    "name": "Black Velvet",
+    "category": "Birthday Party",
+    "price": 760,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake20.png"
+  },
+  {
+    "id": 21,
+    "name": "Kaju Malai",
+    "category": "Birthday Party",
+    "price": 800,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake21.png"
+  },
+  {
+    "id": 22,
+    "name": "Rich Coffee Chocalate",
+    "category": "Birthday Party",
+    "price": 4800,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake22.png"
+  },
+  {
+    "id": 23,
+    "name": "Chocolate Mocca",
+    "category": "Birthday Party",
+    "price": 700,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake23.jpeg"
+  },
+  {
+    "id": 24,
+    "name": "Almond Trffle",
+    "category": "Birthday Party",
+    "price": 800,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake24.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Rus Malai",
+    "category": "Birthday Party",
+    "price": 800,
+    "quantity": " 1 kg",
+    "image": "/RegularCake-images/RegularCake25.jpg"
+  }
+
+]

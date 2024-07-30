@@ -115,7 +115,7 @@ const CustomizeCake = () => {
                 <p>{cake.quantity}</p>
                 <p className="regular-price">
                   <span className="regular-original-price">₹{cake.price * 1.2}</span> {/* Assuming original price is 20% higher */}
-                  <span className="regular-discounted-price">₹{cake.price}</span>
+                  <span className="regular-discounted-price">₹{cake.price} Per kg</span>
                 </p>
                 <button className="regular-whatsapp-button">
                   <FaShoppingBasket /> Buy on WhatsApp
