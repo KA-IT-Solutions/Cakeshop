@@ -643,7 +643,7 @@
   {
     "id": 97,
     "name": "Anniversary Cake",
-    "category": "Girls || Aniversary",
+    "category": "Girls || Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake97.jpeg"
@@ -651,7 +651,7 @@
   {
     "id": 98,
     "name": "Girls Cake",
-    "category": "Girls || Aniversary",
+    "category": "Girls || Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake98.jpeg"
@@ -659,7 +659,7 @@
   {
     "id": 99,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1 kg",
     "image": "/CustomizeCake-images/CusCake99.jpeg"
@@ -667,7 +667,7 @@
   {
     "id": 100,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 2 kg",
     "image": "/CustomizeCake-images/CusCake100.jpeg"
@@ -675,7 +675,7 @@
   {
     "id": 101,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 950,
     "quantity": "(Mini) 1 kg",
     "image": "/CustomizeCake-images/CusCake101.jpeg"
@@ -683,7 +683,7 @@
   {
     "id": 102,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 3 kg",
     "image": "/CustomizeCake-images/CusCake102.jpeg"
@@ -691,7 +691,7 @@
   {
     "id": 106,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake106.jpeg"
@@ -715,7 +715,7 @@
   {
     "id": 110,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 2 kg",
     "image": "/CustomizeCake-images/CusCake110.jpeg"
@@ -739,7 +739,7 @@
   {
     "id": 116,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 950,
     "quantity": "(Mini) 1 kg",
     "image": "/CustomizeCake-images/CusCake116.jpeg"
@@ -747,7 +747,7 @@
   {
     "id": 117,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 2 kg",
     "image": "/CustomizeCake-images/CusCake117.jpeg"
@@ -763,7 +763,7 @@
   {
     "id": 121,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 2 kg",
     "image": "/CustomizeCake-images/CusCake121.jpeg"
@@ -771,7 +771,7 @@
   {
     "id": 122,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake122.jpeg"
@@ -899,7 +899,7 @@
   {
     "id": 140,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 950,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake140.jpeg"
@@ -939,7 +939,7 @@
   {
     "id": 146,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1200,
     "quantity": "(Mini) 5 kg",
     "image": "/CustomizeCake-images/CusCake146.jpeg"
@@ -947,7 +947,7 @@
   {
     "id": 147,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 900,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake147.png"
@@ -955,7 +955,7 @@
   {
     "id": 148,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 900,
     "quantity": "(Mini) 1 kg",
     "image": "/CustomizeCake-images/CusCake148.jpeg"
@@ -963,7 +963,7 @@
   {
     "id": 149,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1 kg",
     "image": "/CustomizeCake-images/CusCake149.jpeg"
@@ -979,7 +979,7 @@
   {
     "id": 153,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 900,
     "quantity": "(Mini) 1 kg",
     "image": "/CustomizeCake-images/CusCake153.png"
@@ -995,7 +995,7 @@
   {
     "id": 155,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 900,
     "quantity": "(Mini) 1 kg",
     "image": "/CustomizeCake-images/CusCake155.jpeg"
@@ -1003,7 +1003,7 @@
   {
     "id": 156,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 900,
     "quantity": "(Mini) 1 kg",
     "image": "/CustomizeCake-images/CusCake156.png"
@@ -1011,7 +1011,7 @@
   {
     "id": 157,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 900,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake157.jpeg"
@@ -1019,7 +1019,7 @@
   {
     "id": 158,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 900,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake158.jpeg"
@@ -1027,7 +1027,7 @@
   {
     "id": 159,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 2 kg",
     "image": "/CustomizeCake-images/CusCake159.jpeg"
@@ -1035,7 +1035,7 @@
   {
     "id": 160,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake160.jpeg"
@@ -1043,7 +1043,7 @@
   {
     "id": 161,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1200,
     "quantity": "(Mini) 2 kg",
     "image": "/CustomizeCake-images/CusCake161.jpeg"
@@ -1051,7 +1051,7 @@
   {
     "id": 162,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake162.jpeg"
@@ -1059,7 +1059,7 @@
   {
     "id": 163,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake163.jpeg"
@@ -1067,7 +1067,7 @@
   {
     "id": 164,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake164.jpeg"
@@ -1075,7 +1075,7 @@
   {
     "id": 166,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 900,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake166.jpeg"
@@ -1083,7 +1083,7 @@
   {
     "id": 167,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake167.jpeg"
@@ -1091,7 +1091,7 @@
   {
     "id": 168,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake168.jpeg"
@@ -1099,7 +1099,7 @@
   {
     "id": 170,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake170.jpeg"
@@ -1107,7 +1107,7 @@
   {
     "id": 172,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 900,
     "quantity": "(Mini) 2 kg",
     "image": "/CustomizeCake-images/CusCake172.jpeg"
@@ -1115,7 +1115,7 @@
   {
     "id": 174,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 2 kg",
     "image": "/CustomizeCake-images/CusCake174.jpeg"
@@ -1123,7 +1123,7 @@
   {
     "id": 177,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1200,
     "quantity": "(Mini) 1.5 kg",
     "image": "/CustomizeCake-images/CusCake177.jpeg"
@@ -1131,7 +1131,7 @@
   {
     "id": 178,
     "name": "Anniversary Cake",
-    "category": "Aniversary",
+    "category": "Anniversary",
     "price": 1000,
     "quantity": "(Mini) 2 kg",
     "image": "/CustomizeCake-images/CusCake178.jpeg"
