@@ -3,9 +3,9 @@ import { FaShoppingBasket } from 'react-icons/fa';
 import { useLocation,  useNavigate } from 'react-router-dom';
 import './RegularCake.css';
 import cakesData from '../RegularData.json';
-import { generateWhatsAppLink } from '../whatsapplink/utils';
 
-const RegularCake = ({ cake }) => {
+
+const RegularCake = () => {
   const navigate = useNavigate();
   const [filters, setFilters] = useState({ name: '', price: '', quantity: '', category: '' });
   const [filteredCakes, setFilteredCakes] = useState(cakesData);
@@ -127,26 +127,16 @@ const RegularCake = ({ cake }) => {
         <div className="regular-cake-cards">
           {filteredCakes.map(cake => (
             <div key={cake.id} className="regular-cake-card">
-
-        <img  src={process.env.PUBLIC_URL + cake.image} alt={cake.name} className="regular-cake-image" />
-
-
-               
+              <img src={cake.image} alt={cake.name} className="regular-cake-image" />
               <div className="regular-cake-details">
                 <h3>{cake.name}</h3>
                 <p>{cake.quantity}</p>
                 <p className="regular-price">
                   <span className="regular-original-price">₹{cake.price * 1.2}</span> {/* Assuming original price is 20% higher */}
-                  <span className="regular-discounted-price">₹{cake.price}</span>
+                  <span className="regular-discounted-price">₹{cake.price} </span>
                 </p>
                 <button className="regular-whatsapp-button">
-                <a
-                href={generateWhatsAppLink(cake)}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
                   <FaShoppingBasket /> Buy on WhatsApp
-                  </a>
                 </button>
               </div>
             </div>
