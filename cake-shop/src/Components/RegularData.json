@@ -66,7 +66,7 @@
   {
     "id": 9,
     "name": "Chocolate Crunch",
-    "category": "Anniversary",
+    "category": "Aniversary",
     "price": 350,
     "quantity": " 1/2 kg",
     "image": "/RegularCake-images/RegularCake9.png"
@@ -138,7 +138,7 @@
   {
     "id": 18,
     "name": "Chocolate Cake",
-    "category": "Anniversary",
+    "category": "Aniversary",
     "price": 250,
     "quantity": "1/2 kg",
     "image": "/RegularCake-images/RegularCake18.png"

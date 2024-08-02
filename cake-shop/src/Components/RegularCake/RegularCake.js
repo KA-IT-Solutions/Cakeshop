@@ -113,14 +113,14 @@ const RegularCake = ({ cake }) => {
           </select>
           <select onChange={(e) => setFilters({ ...filters, quantity: e.target.value })}>
             <option value="">Select Quantity</option>
+            <option value="1/2 kg">1/2 kg</option>
             <option value="1 kg">1 kg</option>
             <option value="2 kg">2 kg</option>
-            <option value="3 kg">3 kg</option>
           </select>
           <select onChange={(e) => setFilters({ ...filters, category: e.target.value })}>
             <option value="">Select Category</option>
             <option value="aniversary">Anniversary</option>
-            <option value="birthday party">Birthday Party</option>
+            <option value="Birthday Party">Birthday Party</option>
             {/* Add more options as needed */}
           </select>
         </div>
