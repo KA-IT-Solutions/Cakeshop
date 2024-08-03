@@ -82,13 +82,12 @@ const CustomizeCake = () => {
       </div>
       <div className="cake-shop">
         <div className="filters">
-          <select onChange={(e) => setFilters({ ...filters, name: e.target.value })}>
+          {/* <select onChange={(e) => setFilters({ ...filters, name: e.target.value })}>
             <option value="">Select Cake Name</option>
             <option value="lemon">Lemon</option>
             <option value="chocolate">Chocolate</option>
             <option value="strawberry">Strawberry</option>
-            {/* Add more options as needed */}
-          </select>
+          </select> */}
           <select onChange={(e) => setFilters({ ...filters, price: e.target.value })}>
             <option value="">Select Price Range</option>
             <option value="100-500">100 - 500</option>
@@ -98,16 +97,20 @@ const CustomizeCake = () => {
           <select onChange={(e) => setFilters({ ...filters, quantity: e.target.value })}>
             <option value="">Select Quantity</option>
             <option value="1 kg">1 kg</option>
+            <option value="1.5 kg">1.5 kg</option>
             <option value="2 kg">2 kg</option>
+            <option value="2.5 kg">2.5 kg</option>
             <option value="3 kg">3 kg</option>
+            <option value="4 kg">4 kg</option>
+            <option value="5 kg">5 kg</option>
+            <option value="7 kg">7 kg</option>
           </select>
           <select onChange={(e) => setFilters({ ...filters, category: e.target.value })}>
             <option value="">Select Category</option>
             <option value="Anniversary">Anniversary</option>
-            <option value="Birthday Party">Birthday Party</option>
-            <option value="Customized Cake">Customized Cake</option>
-            <option value="Boys Cake">Boys Cake</option>
-            <option value="Girls Cake">Girls Cake</option>
+            <option value="Customized">Customized Cake</option>
+            <option value="Boys">Boys Cake</option>
+            <option value="Girls">Girls Cake</option>
             {/* Add more options as needed */}
           </select>
         </div>
@@ -117,7 +120,7 @@ const CustomizeCake = () => {
               <img src={cake.image} alt={cake.name} className="regular-cake-image" />
               <div className="regular-cake-details">
                 <h3>{cake.name}</h3>
-                <p>{cake.quantity}</p>
+                <p> (Mini) {cake.quantity}</p>
                 <p className="regular-price">
                   <span className="regular-original-price">₹{cake.price * 1.2}</span> {/* Assuming original price is 20% higher */}
                   <span className="regular-discounted-price">₹{cake.price} Per kg</span>
