@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaShoppingBasket } from 'react-icons/fa';
-import { useLocation,  useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './RegularCake.css';
 import cakesData from '../RegularData.json';
 
@@ -44,12 +44,14 @@ const RegularCake = () => {
 
 
 
-
   useEffect(() => {
+    console.log("Current filters:", filters);
     let filtered = cakesData;
 
     if (filters.name) {
-      filtered = filtered.filter(cake => cake.name.toLowerCase().includes(filters.name.toLowerCase()));
+      filtered = filtered.filter(cake =>
+        cake.name.toLowerCase().includes(filters.name.toLowerCase())
+      );
     }
     if (filters.price) {
       if (filters.price === '100-250') {
@@ -61,12 +63,15 @@ const RegularCake = () => {
       }
     }
     if (filters.quantity) {
-      filtered = filtered.filter(cake => cake.quantity === filters.quantity);
+      filtered = filtered.filter(cake => cake.quantity.trim() === filters.quantity.trim());
     }
     if (filters.category) {
-      filtered = filtered.filter(cake => cake.category.toLowerCase().includes(filters.category.toLowerCase()));
+      filtered = filtered.filter(cake =>
+        cake.category.toLowerCase().trim() === filters.category.toLowerCase().trim()
+      );
     }
 
+    console.log("Filtered cakes:", filtered);
     setFilteredCakes(filtered);
   }, [filters]);
 
@@ -111,32 +116,83 @@ const RegularCake = () => {
             <option value="below-500">Below 500</option>
             <option value="above-500">Above 500</option>
           </select>
+
           <select onChange={(e) => setFilters({ ...filters, quantity: e.target.value })}>
             <option value="">Select Quantity</option>
+            <option value="1/2 kg">1/2 kg</option>
             <option value="1 kg">1 kg</option>
             <option value="2 kg">2 kg</option>
-            <option value="3 kg">3 kg</option>
           </select>
+
           <select onChange={(e) => setFilters({ ...filters, category: e.target.value })}>
             <option value="">Select Category</option>
-            <option value="aniversary">Anniversary</option>
-            <option value="birthday party">Birthday Party</option>
-            {/* Add more options as needed */}
+            <option value="Anniversary">Anniversary</option>
+            <option value="Birthday Party">Birthday Party</option>
           </select>
         </div>
         <div className="regular-cake-cards">
           {filteredCakes.map(cake => (
+            // <div key={cake.id} className="regular-cake-card">
+            //   <img
+            //     src={process.env.PUBLIC_URL + cake.image}
+            //     alt={`Image of ${cake.name}`}
+            //     className="regular-cake-image"
+            //     onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
+            //   />
+            //   <div className="regular-cake-details">
+            //     <h3>{cake.name}</h3>
+            //     <p>{cake.quantity}</p>
+            //     <p className="regular-price">
+            //       <span className="regular-original-price">₹{(cake.price * 1.2).toFixed(2)}</span>
+            //       <span className="regular-discounted-price">₹{cake.price.toFixed(2)}</span>
+            //     </p>
+            //     <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
+            //       <a
+            //         href={generateWhatsAppLink(cake)}
+            //         target="_blank"
+            //         rel="noopener noreferrer"
+            //       >
+            //         <FaShoppingBasket /> Buy on WhatsApp
+            //       </a>
+            //     </button>
+            //   </div>
+
+            // </div>
+
             <div key={cake.id} className="regular-cake-card">
+<<<<<<< HEAD
               <img src={cake.image} alt={cake.name} className="regular-cake-image" />
+=======
+              <img
+                src={`${process.env.REACT_APP_PUBLIC_URL}/${cake.image}`}
+                alt={`Image of ${cake.name}`}
+                className="regular-cake-image"
+                // onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
+              />
+>>>>>>> da45dbc9807adfe8124481903a5f4fd330f86bdb
               <div className="regular-cake-details">
                 <h3>{cake.name}</h3>
                 <p>{cake.quantity}</p>
                 <p className="regular-price">
+<<<<<<< HEAD
                   <span className="regular-original-price">₹{cake.price * 1.2}</span> {/* Assuming original price is 20% higher */}
                   <span className="regular-discounted-price">₹{cake.price} </span>
                 </p>
                 <button className="regular-whatsapp-button">
                   <FaShoppingBasket /> Buy on WhatsApp
+=======
+                  <span className="regular-original-price">₹{(cake.price * 1.2).toFixed(2)}</span>
+                  <span className="regular-discounted-price">₹{cake.price.toFixed(2)}</span>
+                </p>
+                <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
+                  <a
+                    href={generateWhatsAppLink(cake)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaShoppingBasket /> Buy on WhatsApp
+                  </a>
+>>>>>>> da45dbc9807adfe8124481903a5f4fd330f86bdb
                 </button>
               </div>
             </div>
