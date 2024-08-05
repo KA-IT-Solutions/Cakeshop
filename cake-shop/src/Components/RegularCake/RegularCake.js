@@ -132,39 +132,12 @@ const RegularCake = ({ cake }) => {
         </div>
         <div className="regular-cake-cards">
           {filteredCakes.map(cake => (
-            // <div key={cake.id} className="regular-cake-card">
-            //   <img
-            //     src={process.env.PUBLIC_URL + cake.image}
-            //     alt={`Image of ${cake.name}`}
-            //     className="regular-cake-image"
-            //     onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
-            //   />
-            //   <div className="regular-cake-details">
-            //     <h3>{cake.name}</h3>
-            //     <p>{cake.quantity}</p>
-            //     <p className="regular-price">
-            //       <span className="regular-original-price">₹{(cake.price * 1.2).toFixed(2)}</span>
-            //       <span className="regular-discounted-price">₹{cake.price.toFixed(2)}</span>
-            //     </p>
-            //     <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
-            //       <a
-            //         href={generateWhatsAppLink(cake)}
-            //         target="_blank"
-            //         rel="noopener noreferrer"
-            //       >
-            //         <FaShoppingBasket /> Buy on WhatsApp
-            //       </a>
-            //     </button>
-            //   </div>
-
-            // </div>
-
             <div key={cake.id} className="regular-cake-card">
               <img
-                src={`${process.env.REACT_APP_PUBLIC_URL}/${cake.image}`}
+                src={process.env.PUBLIC_URL + cake.image}
                 alt={`Image of ${cake.name}`}
                 className="regular-cake-image"
-                // onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
+                onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
               />
               <div className="regular-cake-details">
                 <h3>{cake.name}</h3>
@@ -183,7 +156,34 @@ const RegularCake = ({ cake }) => {
                   </a>
                 </button>
               </div>
+
             </div>
+
+            // <div key={cake.id} className="regular-cake-card">
+            //   <img
+            //     src={`${process.env.REACT_APP_PUBLIC_URL}/${cake.image}`}
+            //     alt={`Image of ${cake.name}`}
+            //     className="regular-cake-image"
+            //     // onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
+            //   />
+            //   <div className="regular-cake-details">
+            //     <h3>{cake.name}</h3>
+            //     <p>{cake.quantity}</p>
+            //     <p className="regular-price">
+            //       <span className="regular-original-price">₹{(cake.price * 1.2).toFixed(2)}</span>
+            //       <span className="regular-discounted-price">₹{cake.price.toFixed(2)}</span>
+            //     </p>
+            //     <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
+            //       <a
+            //         href={generateWhatsAppLink(cake)}
+            //         target="_blank"
+            //         rel="noopener noreferrer"
+            //       >
+            //         <FaShoppingBasket /> Buy on WhatsApp
+            //       </a>
+            //     </button>
+            //   </div>
+            // </div>
           ))}
         </div>
       </div>
