@@ -22,13 +22,13 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        await axios.post('http://localhost:8000/send', formState);
-        alert('Message sent successfully');
-        setFormState({ name: '', email: '', message: '' });
+      await axios.post('http://localhost:8000/send', formState);
+      alert('Message sent successfully');
+      setFormState({ name: '', email: '', message: '' });
     } catch (error) {
-        console.error('There was an error sending the message!', error);
+      console.error('There was an error sending the message!', error);
     }
-};
+  };
 
   return (
     <div className="contact-page">
