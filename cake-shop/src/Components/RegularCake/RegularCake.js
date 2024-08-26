@@ -3,7 +3,7 @@ import { FaShoppingBasket } from 'react-icons/fa';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './RegularCake.css';
 import cakesData from '../RegularData.json';
-import {generateWhatsAppLink} from '../whatsapplink/utils';
+import { generateWhatsAppLink } from '../whatsapplink/utils';
 
 
 const RegularCake = () => {
@@ -133,26 +133,7 @@ const RegularCake = () => {
         </div>
         <div className="regular-cake-cards">
           {filteredCakes.map(cake => (
-<<<<<<< HEAD
-             <div key={cake.id} className="regular-cake-card">
-              <img
-               src={process.env.PUBLIC_URL + cake.image}
-                 alt={`Image of ${cake.name}`}
-                 className="regular-cake-image"
-                onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
-              />
-               <div className="regular-cake-details">
-                <h3>{cake.name}</h3>
-                <p>{cake.quantity}</p>
-                <p className="regular-price">
-                  <span className="regular-original-price">₹{(cake.price * 1.2).toFixed(2)}</span>
-                  <span className="regular-discounted-price">₹{cake.price.toFixed(2)}</span>
-                </p>
-                <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
-                   <a
-=======
             <div key={cake.id} className="regular-cake-card">
-              <img src={cake.image} alt={cake.name} className="regular-cake-image" />
               <img
                 src={process.env.PUBLIC_URL + cake.image}
                 alt={`Image of ${cake.name}`}
@@ -163,36 +144,50 @@ const RegularCake = () => {
                 <h3>{cake.name}</h3>
                 <p>{cake.quantity}</p>
                 <p className="regular-price">
-                  <span className="regular-original-price">₹{cake.price * 1.2}</span> {/* Assuming original price is 20% higher */}
-                  <span className="regular-discounted-price">₹{cake.price} </span>
-                </p>
-                <button className="regular-whatsapp-button">
-                  <FaShoppingBasket /> Buy on WhatsApp
                   <span className="regular-original-price">₹{(cake.price * 1.2).toFixed(2)}</span>
                   <span className="regular-discounted-price">₹{cake.price.toFixed(2)}</span>
-                {/* </p> */}
-                </button>
+                </p>
                 <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
                   <a
->>>>>>> bad26c0d303938cdba8b534b9278db1fcfb64d79
-                    href={generateWhatsAppLink(cake)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-<<<<<<< HEAD
-                     <FaShoppingBasket /> Buy on WhatsApp
-                   </a>
-                 </button>
-               </div>
+            <div key={cake.id} className="regular-cake-card">
+                    <img src={cake.image} alt={cake.name} className="regular-cake-image" />
+                    <img
+                      src={process.env.PUBLIC_URL + cake.image}
+                      alt={`Image of ${cake.name}`}
+                      className="regular-cake-image"
+                      onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
+                    />
+                    <div className="regular-cake-details">
+                      <h3>{cake.name}</h3>
+                      <p>{cake.quantity}</p>
+                      <p className="regular-price">
+                        <span className="regular-original-price">₹{cake.price * 1.2}</span> {/* Assuming original price is 20% higher */}
+                        <span className="regular-discounted-price">₹{cake.price} </span>
+                      </p>
+                      <button className="regular-whatsapp-button">
+                        <FaShoppingBasket /> Buy on WhatsApp
+                        <span className="regular-original-price">₹{(cake.price * 1.2).toFixed(2)}</span>
+                        <span className="regular-discounted-price">₹{cake.price.toFixed(2)}</span>
+                        {/* </p> */}
+                      </button>
+                      <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
+                        <a
+                          href={generateWhatsAppLink(cake)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FaShoppingBasket /> Buy on WhatsApp
+                        </a>
+                      </button>
+                    </div>
 
-             </div>
+                  </div>
 
-            
-=======
-                    <FaShoppingBasket /> Buy on WhatsApp
-                  </a>
-                </button>
-              </div>
+
+                  <FaShoppingBasket /> Buy on WhatsApp
+                </a>
+              </button>
+            </div>
 
             </div>
 
@@ -221,10 +216,9 @@ const RegularCake = () => {
             //     </button>
             //   </div>
             // </div>
->>>>>>> bad26c0d303938cdba8b534b9278db1fcfb64d79
           ))}
-        </div>
-        </div>
+    </div >
+        </div >
      
     </>
   );
