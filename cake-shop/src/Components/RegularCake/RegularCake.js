@@ -132,12 +132,10 @@ const RegularCake = () => {
             <option value="Birthday Party">Birthday Party</option>
           </select>
         </div>
-        <div className="regular-cake-cards">
-<<<<<<< HEAD
-          {filteredCakes.map(cake => (
-=======
+  
+
+           <div className="regular-cake-cards">
           {filteredCakes.map((cake) => (
->>>>>>> 4c0c113e35a483bfab0dc4953f8b977c1591ef6c
             <div key={cake.id} className="regular-cake-card">
               <img
                 src={process.env.PUBLIC_URL + cake.image}
@@ -150,84 +148,6 @@ const RegularCake = () => {
                 <h3>{cake.name}</h3>
                 <p> (Mini) {cake.quantity}</p>
                 <p className="regular-price">
-<<<<<<< HEAD
-                  <span className="regular-original-price">₹{(cake.price * 1.2).toFixed(2)}</span>
-                  <span className="regular-discounted-price">₹{cake.price.toFixed(2)}</span>
-                </p>
-                <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
-                  <a
-            <div key={cake.id} className="regular-cake-card">
-                    <img src={cake.image} alt={cake.name} className="regular-cake-image" />
-                    <img
-                      src={process.env.PUBLIC_URL + cake.image}
-                      alt={`Image of ${cake.name}`}
-                      className="regular-cake-image"
-                      onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
-                    />
-                    <div className="regular-cake-details">
-                      <h3>{cake.name}</h3>
-                      <p>{cake.quantity}</p>
-                      <p className="regular-price">
-                        <span className="regular-original-price">₹{cake.price * 1.2}</span> {/* Assuming original price is 20% higher */}
-                        <span className="regular-discounted-price">₹{cake.price} </span>
-                      </p>
-                      <button className="regular-whatsapp-button">
-                        <FaShoppingBasket /> Buy on WhatsApp
-                        <span className="regular-original-price">₹{(cake.price * 1.2).toFixed(2)}</span>
-                        <span className="regular-discounted-price">₹{cake.price.toFixed(2)}</span>
-                        {/* </p> */}
-                      </button>
-                      <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
-                        <a
-                          href={generateWhatsAppLink(cake)}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <FaShoppingBasket /> Buy on WhatsApp
-                        </a>
-                      </button>
-                    </div>
-
-                  </div>
-
-
-                  <FaShoppingBasket /> Buy on WhatsApp
-                </a>
-              </button>
-            </div>
-
-            </div>
-
-            // <div key={cake.id} className="regular-cake-card">
-            //   <img
-            //     src={`${process.env.REACT_APP_PUBLIC_URL}/${cake.image}`}
-            //     alt={`Image of ${cake.name}`}
-            //     className="regular-cake-image"
-            //     // onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
-            //   />
-            //   <div className="regular-cake-details">
-            //     <h3>{cake.name}</h3>
-            //     <p>{cake.quantity}</p>
-            //     <p className="regular-price">
-            //       <span className="regular-original-price">₹{(cake.price * 1.2).toFixed(2)}</span>
-            //       <span className="regular-discounted-price">₹{cake.price.toFixed(2)}</span>
-            //     </p>
-            //     <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
-            //       <a
-            //         href={generateWhatsAppLink(cake)}
-            //         target="_blank"
-            //         rel="noopener noreferrer"
-            //       >
-            //         <FaShoppingBasket /> Buy on WhatsApp
-            //       </a>
-            //     </button>
-            //   </div>
-            // </div>
-          ))}
-    </div >
-        </div >
-     
-=======
                   <span className="regular-original-price">
                     ₹{cake.price * 1.2}
                   </span>{" "}
@@ -250,7 +170,7 @@ const RegularCake = () => {
           ))}
         </div>
       </div>
->>>>>>> 4c0c113e35a483bfab0dc4953f8b977c1591ef6c
+
     </>
   );
 };
