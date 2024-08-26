@@ -133,30 +133,26 @@ const RegularCake = () => {
         <div className="regular-cake-cards">
           {filteredCakes.map(cake => (
             <div key={cake.id} className="regular-cake-card">
-<<<<<<< HEAD
               <img src={cake.image} alt={cake.name} className="regular-cake-image" />
-=======
               <img
                 src={process.env.PUBLIC_URL + cake.image}
                 alt={`Image of ${cake.name}`}
                 className="regular-cake-image"
                 onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
               />
->>>>>>> da45dbc9807adfe8124481903a5f4fd330f86bdb
               <div className="regular-cake-details">
                 <h3>{cake.name}</h3>
                 <p>{cake.quantity}</p>
                 <p className="regular-price">
-<<<<<<< HEAD
                   <span className="regular-original-price">₹{cake.price * 1.2}</span> {/* Assuming original price is 20% higher */}
                   <span className="regular-discounted-price">₹{cake.price} </span>
                 </p>
                 <button className="regular-whatsapp-button">
                   <FaShoppingBasket /> Buy on WhatsApp
-=======
                   <span className="regular-original-price">₹{(cake.price * 1.2).toFixed(2)}</span>
                   <span className="regular-discounted-price">₹{cake.price.toFixed(2)}</span>
-                </p>
+                {/* </p> */}
+                </button>
                 <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
                   <a
                     href={generateWhatsAppLink(cake)}
@@ -165,7 +161,6 @@ const RegularCake = () => {
                   >
                     <FaShoppingBasket /> Buy on WhatsApp
                   </a>
->>>>>>> da45dbc9807adfe8124481903a5f4fd330f86bdb
                 </button>
               </div>
 
