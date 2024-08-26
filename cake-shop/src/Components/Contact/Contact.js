@@ -23,10 +23,18 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4c0c113e35a483bfab0dc4953f8b977c1591ef6c
       const response = await axios.post('http://localhost:8000/send', formState);
       console.log('Response:', response.data); // Log the response from the server
       alert('Message sent successfully');
       setFormState({ name: '', email: '', message: '', phone: '' }); // Reset form state
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4c0c113e35a483bfab0dc4953f8b977c1591ef6c
       await axios.post('http://localhost:8000/send', formState);
       alert('Message sent successfully');
       setFormState({ name: '', email: '', message: '' });
@@ -35,7 +43,10 @@ const Contact = () => {
     }
   };
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4c0c113e35a483bfab0dc4953f8b977c1591ef6c
 
   return (
     <div className="contact-page">
