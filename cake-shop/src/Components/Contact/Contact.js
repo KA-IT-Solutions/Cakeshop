@@ -9,6 +9,7 @@ const Contact = () => {
     name: '',
     email: '',
     message: '',
+    phone: '',
   });
 
   const handleChange = (e) => {
@@ -22,13 +23,15 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        await axios.post('http://localhost:8000/send', formState);
-        alert('Message sent successfully');
-        setFormState({ name: '', email: '', message: '' });
+      const response = await axios.post('http://localhost:8000/send', formState);
+      console.log('Response:', response.data); // Log the response from the server
+      alert('Message sent successfully');
+      setFormState({ name: '', email: '', message: '', phone: '' }); // Reset form state
     } catch (error) {
-        console.error('There was an error sending the message!', error);
+      console.error('There was an error sending the message!', error);
     }
-};
+  };
+
 
   return (
     <div className="contact-page">
@@ -44,10 +47,10 @@ const Contact = () => {
             className="animate__animated animate__zoomIn"
           />
           <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            value={formState.email}
+            type="phone"
+            name="phone"
+            placeholder="Your number"
+            value={formState.phone}
             onChange={handleChange}
             className="animate__animated animate__zoomIn"
           />

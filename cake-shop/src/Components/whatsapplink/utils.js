@@ -26,3 +26,4 @@ export const generateWhatsAppLink = (cake) => {
     return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   };
   
+  

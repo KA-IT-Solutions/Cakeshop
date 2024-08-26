@@ -11,6 +11,7 @@ import customeData from '../CustomizeCake.json';
 import { FaShoppingBasket } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import {generateWhatsAppLink} from '../whatsapplink/utils';
 
 
 
@@ -102,17 +103,32 @@ const Product = () => {
           
             {cakesData.map(cake => (
               <div key={cake.id} className="cake-card">
-                <img src={cake.image} alt={cake.name} className="cake-image" />
-                <div className="cake-details">
+{  /*              <img src={cake.image} alt={cake.name} className="cake-image" />
+
+*/}     
+ <img
+               src={process.env.PUBLIC_URL + cake.image}
+                 alt={`Image of ${cake.name}`}
+                 className="cake-image"
+                onError={(e) => e.target.src = 'fallback-image-url'} // Add a fallback image URL
+              />          
+
+ <div className="cake-details">
                   <h3>{cake.name}</h3>
                   <p>{cake.quantity}</p>
                   <p className="price">
                     <span className="original-price">₹{cake.price * 1.2}</span>
                     <span className="discounted-price">₹{cake.price}</span>
                   </p>
-                  <button className="whatsapp-button">
-                    <FaShoppingBasket /> Buy on WhatsApp
-                  </button>
+                  <button className= "whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
+                   <a
+                    href={generateWhatsAppLink(cake)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                     <FaShoppingBasket /> Buy on WhatsApp
+                   </a>
+                 </button>
                 </div>
               </div>
 
@@ -143,7 +159,13 @@ const Product = () => {
         <div className="slider-container" ref={sliderRef}>
           {customeData.map(cake => (
             <div key={cake.id} className="cake-card">
-              <img src={cake.image} alt={cake.name} className="cake-image" />
+              <img
+                src={process.env.PUBLIC_URL + cake.image}
+                //alt={cake.name}
+                alt={`Image of ${cake.name}`}
+                className="cake-image"
+                onError={(e) => e.target.src = 'fallback-image-url'}
+              />
               <div className="cake-details">
                 <h3>{cake.name}</h3>
                 <p>{cake.quantity}</p>
@@ -151,9 +173,15 @@ const Product = () => {
                   <span className="original-price">₹{cake.price * 1.2}</span>
                   <span className="discounted-price">₹{cake.price}</span>
                 </p>
-                <button className="whatsapp-button">
-                  <FaShoppingBasket /> Buy on WhatsApp
-                </button>
+                <button className="whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
+                   <a
+                    href={generateWhatsAppLink(cake)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                     <FaShoppingBasket /> Buy on WhatsApp
+                   </a>
+                 </button>
               </div>
             </div>
           ))}
