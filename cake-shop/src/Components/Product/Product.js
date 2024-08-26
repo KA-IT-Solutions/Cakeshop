@@ -5,6 +5,7 @@ import Regular from './CusCake103.jpeg';
 import Anivarsary from './CusCake99.jpeg';
 import Brithday from './Birthday.jpeg';
 import Customise from './CusCake100.jpeg';
+import baby from './CusCake90.png';
 import cakesData from '../RegularData.json';
 import customeData from '../CustomizeCake.json';
 import { FaShoppingBasket } from 'react-icons/fa';
@@ -64,8 +65,8 @@ const Product = () => {
           {/* Birthday Cake */}
           <div className="card">
             <img src={Brithday} alt="Birthday" className="card-image" onClick={() => openImageModal(Brithday)} />
-            <button className="card-button" onClick={() => handleCustomiseClick('Birthday')}>
-              Birthday Cake
+            <button className="card-button" onClick={() => handleCustomiseClick('boys')}>
+              Boys Cake
             </button>
           </div>
           {/* Customise Cake */}
@@ -77,14 +78,14 @@ const Product = () => {
           </div>
           <div className="card">
             <img src={Customise} alt="Customise" className="card-image" onClick={() => openImageModal(Customise)} />
-            <button className="card-button" onClick={() => handleCustomiseClick('Customized')}>
-              Customise Cake
+            <button className="card-button" onClick={() => handleCustomiseClick('girls')}>
+              Girls Cake
             </button>
           </div>
           <div className="card">
-            <img src={Customise} alt="Customise" className="card-image" onClick={() => openImageModal(Customise)} />
+            <img src={baby} alt="Customise" className="card-image" onClick={() => openImageModal(Customise)} />
             <button className="card-button" onClick={() => handleCustomiseClick('Customized')}>
-              Customise Cake
+              Baby Cake
             </button>
           </div>
         </div>
