@@ -233,6 +233,16 @@
   font-size: 16px;
 }
 
+.whatsapp-button a {
+  color: black; /* Change text color to black */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.whatsapp-button a:hover {
+  color: #333; /* Optional: Darker shade for hover effect */
+}
+
+
 
 .whatsapp-button svg {
   margin-right: 5px;
@@ -685,3 +695,4 @@
 }
 
 /* Other existing CSS for product, slider, and contact sections */
+

@@ -212,6 +212,16 @@
   background-color: #1da851;
 }
 
+.regular-whatsapp-button a {
+  color: black; /* Change text color to black */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.regular-whatsapp-button a:hover {
+  color: #333; /* Optional: Darker shade for hover effect */
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .cake-shop .filters {

@@ -13,6 +13,7 @@ import Girls from './CusCake97.png';
 import { FaShoppingBasket } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { generateWhatsAppLink } from '../whatsapplink/utils';
 
 const Product = () => {
   const [modalImage, setModalImage] = useState(null);
@@ -107,9 +108,15 @@ const Product = () => {
                   <span className="original-price">₹{cake.price * 1.2}</span>
                   <span className="discounted-price">₹{cake.price}</span>
                 </p>
-                <button className="whatsapp-button">
+                {/* <button className="whatsapp-button" >
                   <FaShoppingBasket /> Buy on WhatsApp
+                </button> */}
+                <button className="whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
+                  <a href={generateWhatsAppLink(cake)} target="_blank" rel="noopener noreferrer">
+                    <FaShoppingBasket /> Buy on WhatsApp
+                  </a>
                 </button>
+
               </div>
             </div>
           ))}
@@ -134,9 +141,15 @@ const Product = () => {
                   <span className="original-price">₹{cake.price * 1.2}</span>
                   <span className="discounted-price">₹{cake.price}</span>
                 </p>
-                <button className="whatsapp-button">
+                {/* <button className="whatsapp-button">
                   <FaShoppingBasket /> Buy on WhatsApp
+                </button> */}
+                <button className="whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
+                  <a href={generateWhatsAppLink(cake)} target="_blank" rel="noopener noreferrer" className='whatapp-text'>
+                    <FaShoppingBasket /> Buy on WhatsApp
+                  </a>
                 </button>
+
               </div>
             </div>
           ))}
