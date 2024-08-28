@@ -5,13 +5,13 @@ import './RegularCake.css';
 import cakesData from '../RegularData.json';
 import { generateWhatsAppLink } from '../whatsapplink/utils';
 
-
 const RegularCake = () => {
   const navigate = useNavigate();
   const [filters, setFilters] = useState({ name: '', price: '', quantity: '', category: '' });
   const [filteredCakes, setFilteredCakes] = useState(cakesData);
-  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const location = useLocation();
 
   useEffect(() => {
     const menuIcon = document.querySelector('.menu-icon');
@@ -34,19 +34,13 @@ const RegularCake = () => {
     };
   }, [isMenuOpen]);
 
-
-
-
   useEffect(() => {
     const query = new URLSearchParams(location.search);
     const category = query.get('category') || '';
     setFilters({ ...filters, category });
   }, [location.search]);
 
-
-
   useEffect(() => {
-    console.log("Current filters:", filters);
     let filtered = cakesData;
 
     if (filters.name) {
@@ -72,14 +66,21 @@ const RegularCake = () => {
       );
     }
 
-    console.log("Filtered cakes:", filtered);
     setFilteredCakes(filtered);
   }, [filters]);
 
-  return (
-  
+  // Function to handle opening the modal
+  const openImageModal = (image) => {
+    setSelectedImage(image);
+  };
 
-<>
+  // Function to handle closing the modal
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
+  return (
+    <>
       <div className="regular-cake-hero1">
         <div className={`regular-cake-hero1-content ${isMenuOpen ? 'hidden' : ''}`}>
           <h1 className="regular-cake-hero1-h1">Taste the Magic of Our Cakes</h1>
@@ -88,6 +89,7 @@ const RegularCake = () => {
       </div>
       <div className="cake-shop">
         <div className="filters">
+          {/* Filter dropdowns */}
           <select onChange={(e) => setFilters({ ...filters, name: e.target.value })}>
             <option value="">Select Cake Name</option>
             <option value="White Forrest">White Forrest</option>
@@ -110,7 +112,6 @@ const RegularCake = () => {
             <option value="Chocolate Mocca">Chocolate Mocca</option>
             <option value="Almond Trffle">Almond Trffle</option>
             <option value="Rus Malai">Rus Malai</option>
-            {/* Add more options as needed */}
           </select>
           <select onChange={(e) => setFilters({ ...filters, price: e.target.value })}>
             <option value="">Select Price Range</option>
@@ -132,45 +133,43 @@ const RegularCake = () => {
             <option value="Birthday Party">Birthday Party</option>
           </select>
         </div>
-  
 
-           <div className="regular-cake-cards">
+        <div className="regular-cake-cards">
           {filteredCakes.map((cake) => (
             <div key={cake.id} className="regular-cake-card">
               <img
                 src={process.env.PUBLIC_URL + cake.image}
-                //alt={cake.name}
                 alt={`Image of ${cake.name}`}
                 className="regular-cake-image"
-                onError={(e) => e.target.src = 'fallback-image-url'}
+                onClick={() => openImageModal(process.env.PUBLIC_URL + cake.image)}
               />
               <div className="regular-cake-details">
                 <h3>{cake.name}</h3>
                 <p> (Mini) {cake.quantity}</p>
                 <p className="regular-price">
-                  <span className="regular-original-price">
-                    ₹{cake.price * 1.2}
-                  </span>{" "}
-                  {/* Assuming original price is 20% higher */}
-                  <span className="regular-discounted-price">
-                    ₹{cake.price} Per kg
-                  </span>
+                  <span className="regular-original-price">₹{cake.price * 1.2}</span>{" "}
+                  <span className="regular-discounted-price">₹{cake.price} Per kg</span>
                 </p>
                 <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
-                   <a
-                    href={generateWhatsAppLink(cake)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                     <FaShoppingBasket /> Buy on WhatsApp
-                   </a>
-                 </button>
-            </div>
+                  <a href={generateWhatsAppLink(cake)} target="_blank" rel="noopener noreferrer">
+                    <FaShoppingBasket /> Buy on WhatsApp
+                  </a>
+                </button>
+              </div>
             </div>
           ))}
         </div>
       </div>
 
+      {/* Modal for full-size image */}
+      {selectedImage && (
+        <div className="image-modal" onClick={closeModal}>
+          <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedImage} alt="Full Size" className="image-modal-image" />
+            <button className="image-modal-close" onClick={closeModal}>×</button>
+          </div>
+        </div>
+      )}
     </>
   );
 };

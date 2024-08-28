@@ -16,6 +16,9 @@ const CustomizeCake = () => {
   const [filteredCakes, setFilteredCakes] = useState(cakesData1);
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  // State to manage modal visibility and selected image
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     const menuIcon = document.querySelector(".menu-icon");
@@ -67,7 +70,7 @@ const CustomizeCake = () => {
           (cake) => cake.price >= 100 && cake.price <= 500
         );
       } else if (normalizedFilters.price === "below-1000") {
-        filtered = filtered.filter((cake) => cake.price < 1000);
+        filtered = filtered.filter((cake) => cake.price <= 1000);
       } else if (normalizedFilters.price === "above-1000") {
         filtered = filtered.filter((cake) => cake.price > 1000);
       }
@@ -86,6 +89,16 @@ const CustomizeCake = () => {
     setFilteredCakes(filtered);
   }, [filters]);
 
+  // Function to open the image in a modal
+  const openModal = (image) => {
+    setSelectedImage(image);
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <>
       <div className="regular-cake-hero">
@@ -100,12 +113,6 @@ const CustomizeCake = () => {
       </div>
       <div className="cake-shop">
         <div className="filters">
-          {/* <select onChange={(e) => setFilters({ ...filters, name: e.target.value })}>
-            <option value="">Select Cake Name</option>
-            <option value="lemon">Lemon</option>
-            <option value="chocolate">Chocolate</option>
-            <option value="strawberry">Strawberry</option>
-          </select> */}
           <select
             onChange={(e) => setFilters({ ...filters, price: e.target.value })}
           >
@@ -139,6 +146,7 @@ const CustomizeCake = () => {
             <option value="Customized">Customized Cake</option>
             <option value="Boys">Boys Cake</option>
             <option value="Girls">Girls Cake</option>
+            <option value="baby">Baby Cake</option>
             {/* Add more options as needed */}
           </select>
         </div>
@@ -151,6 +159,7 @@ const CustomizeCake = () => {
                 alt={`Image of ${cake.name}`}
                 className="regular-cake-image"
                 onError={(e) => e.target.src = 'fallback-image-url'}
+                onClick={() => openModal(process.env.PUBLIC_URL + cake.image)}
               />
               <div className="regular-cake-details">
                 <h3>{cake.name}</h3>
@@ -178,8 +187,23 @@ const CustomizeCake = () => {
           ))}
         </div>
       </div>
+      
+      {selectedImage && (
+        <div className="image-modal" onClick={closeModal}>
+          <span className="image-modal-close">&times;</span>
+          <img
+            src={selectedImage}
+            alt="Full size"
+            className="image-modal-content"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </>
   );
 };
 
 export default CustomizeCake;
+
+
+
