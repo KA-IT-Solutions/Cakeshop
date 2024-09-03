@@ -44,6 +44,10 @@ const Product = () => {
     setModalImage(null);
   };
 
+
+
+ 
+
   return (
     <>
       {/* Product Categories */}
@@ -100,8 +104,12 @@ const Product = () => {
         <div className="slider-container" ref={sliderRef}>
           {cakesData.map(cake => (
             <div key={cake.id} className="cake-card">
-              <img src={cake.image} alt={cake.name} className="cake-image" onClick={() => handleImageClick(cake.image)} />
-              <div className="cake-details">
+  <img
+                src={process.env.PUBLIC_URL + cake.image}
+                alt={`Image of ${cake.name}`}
+                className="cake-image"
+                onClick={() => handleCategoryClick(process.env.PUBLIC_URL + cake.image)}
+              />              <div className="cake-details">
                 <h3>{cake.name}</h3>
                 <p>{cake.quantity}</p>
                 <p className="price">
@@ -133,7 +141,10 @@ const Product = () => {
         <div className="slider-container" ref={sliderRef}>
           {customeData.map(cake => (
             <div key={cake.id} className="cake-card">
-              <img src={cake.image} alt={cake.name} className="cake-image" onClick={() => handleImageClick(cake.image)} />
+              <img  src={process.env.PUBLIC_URL + cake.image}
+                alt={`Image of ${cake.name}`}
+                className="cake-image"
+                onClick={() => handleImageClick(process.env.PUBLIC_URL + cake.image)} />
               <div className="cake-details">
                 <h3>{cake.name}</h3>
                 <p>{cake.quantity}</p>
