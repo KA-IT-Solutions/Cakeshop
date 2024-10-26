@@ -1,179 +1,305 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+// import { FaShoppingBasket } from "react-icons/fa";
+// import { useLocation, useNavigate } from "react-router-dom";
+// import "./CustomizeCake.css";
+// import cakesData1 from "../CustomizeCake.json"; // Assuming CustomizeCake.json is in the same directory
+// import { generateWhatsAppLink } from "../whatsapplink/utils";
+
+// const CustomizeCake = () => {
+//   const navigate = useNavigate();
+//   const [filters, setFilters] = useState({
+//     name: "",
+//     price: "",
+//     quantity: "",
+//     category: "",
+//   });
+//   const [filteredCakes, setFilteredCakes] = useState(cakesData1);
+//   const location = useLocation();
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+//   // State to manage modal visibility and selected image
+//   const [selectedImage, setSelectedImage] = useState(null);
+
+//   useEffect(() => {
+//     const menuIcon = document.querySelector(".menu-icon");
+//     const handleMenuClick = () => {
+//       setIsMenuOpen((prev) => !prev);
+//     };
+
+//     const handleClickOutside = (event) => {
+//       if (!menuIcon.contains(event.target) && isMenuOpen) {
+//         setIsMenuOpen(false);
+//       }
+//     };
+
+//     menuIcon.addEventListener("click", handleMenuClick);
+//     document.addEventListener("click", handleClickOutside);
+
+//     return () => {
+//       menuIcon.removeEventListener("click", handleMenuClick);
+//       document.removeEventListener("click", handleClickOutside);
+//     };
+//   }, [isMenuOpen]);
+
+//   useEffect(() => {
+//     const query = new URLSearchParams(location.search);
+//     const category = query.get("category") || "";
+//     setFilters({ ...filters, category });
+//   }, [location.search]);
+
+//   useEffect(() => {
+//     let filtered = cakesData1;
+
+//     // Normalize filters
+//     const normalizedFilters = {
+//       name: filters.name.trim().toLowerCase(),
+//       price: filters.price.trim(),
+//       quantity: filters.quantity.trim(),
+//       category: filters.category.trim().toLowerCase(),
+//     };
+
+//     // Apply filters
+//     if (normalizedFilters.name) {
+//       filtered = filtered.filter((cake) =>
+//         cake.name.toLowerCase().includes(normalizedFilters.name)
+//       );
+//     }
+//     if (normalizedFilters.price) {
+//       if (normalizedFilters.price === "100-500") {
+//         filtered = filtered.filter(
+//           (cake) => cake.price >= 100 && cake.price <= 500
+//         );
+//       } else if (normalizedFilters.price === "below-1000") {
+//         filtered = filtered.filter((cake) => cake.price <= 1000);
+//       } else if (normalizedFilters.price === "above-1000") {
+//         filtered = filtered.filter((cake) => cake.price > 1000);
+//       }
+//     }
+//     if (normalizedFilters.quantity) {
+//       filtered = filtered.filter(
+//         (cake) => cake.quantity.trim() === normalizedFilters.quantity
+//       );
+//     }
+//     if (normalizedFilters.category) {
+//       filtered = filtered.filter((cake) =>
+//         cake.category.toLowerCase().includes(normalizedFilters.category)
+//       );
+//     }
+
+//     setFilteredCakes(filtered);
+//   }, [filters]);
+
+//   // Function to open the image in a modal
+//   const openModal = (image) => {
+//     setSelectedImage(image);
+//   };
+
+//   // Function to close the modal
+//   const closeModal = () => {
+//     setSelectedImage(null);
+//   };
+
+//   return (
+//     <>
+//       <div className="regular-cake-hero">
+//         <div
+//           className={`regular-cake-hero-content ${isMenuOpen ? "hidden" : ""}`}
+//         >
+//           <h1 className="regular-cake-hero-h1">Taste the Magic of Our Cakes</h1>
+//           <p className="regular-cake-hero-p">
+//             The Perfect Cake for Every Occasion
+//           </p>
+//         </div>
+//       </div>
+//       <div className="cake-shop">
+//         <div className="filters">
+//           <select
+//             onChange={(e) => setFilters({ ...filters, price: e.target.value })}
+//           >
+//             <option value="">Select Price Range</option>
+//             <option value="100-500">100 - 500</option>
+//             <option value="below-1000">Below 1000</option>
+//             <option value="above-1000">Above 1000</option>
+//           </select>
+//           <select
+//             onChange={(e) =>
+//               setFilters({ ...filters, quantity: e.target.value })
+//             }
+//           >
+//             <option value="">Select Quantity</option>
+//             <option value="1 kg">1 kg</option>
+//             <option value="1.5 kg">1.5 kg</option>
+//             <option value="2 kg">2 kg</option>
+//             <option value="2.5 kg">2.5 kg</option>
+//             <option value="3 kg">3 kg</option>
+//             <option value="4 kg">4 kg</option>
+//             <option value="5 kg">5 kg</option>
+//             <option value="7 kg">7 kg</option>
+//           </select>
+//           <select
+//             onChange={(e) =>
+//               setFilters({ ...filters, category: e.target.value })
+//             }
+//           >
+//             <option value="">Select Category</option>
+//             <option value="Anniversary">Anniversary</option>
+//             <option value="Customized">Customized Cake</option>
+//             <option value="Boys">Boys Cake</option>
+//             <option value="Girls">Girls Cake</option>
+//             <option value="baby">Baby Cake</option>
+//             {/* Add more options as needed */}
+//           </select>
+//         </div>
+//         <div className="regular-cake-cards">
+//           {filteredCakes.map((cake) => (
+//             <div key={cake.id} className="regular-cake-card">
+//               <img
+//                 src={process.env.PUBLIC_URL + cake.image}
+//                 //alt={cake.name}
+//                 alt={`Image of ${cake.name}`}
+//                 className="regular-cake-image"
+//                 onError={(e) => e.target.src = 'fallback-image-url'}
+//                 onClick={() => openModal(process.env.PUBLIC_URL + cake.image)}
+//               />
+//               <div className="regular-cake-details">
+//                 <h3>{cake.name}</h3>
+//                 <p> (Mini) {cake.quantity}</p>
+//                 <p className="regular-price">
+//                   <span className="regular-original-price">
+//                     ₹{cake.price * 1.2}
+//                   </span>{" "}
+//                   {/* Assuming original price is 20% higher */}
+//                   <span className="regular-discounted-price">
+//                     ₹{cake.price} Per kg
+//                   </span>
+//                 </p>
+//                 <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
+//                    <a
+//                     href={generateWhatsAppLink(cake)}
+//                     target="_blank"
+//                     rel="noopener noreferrer"
+//                   >
+//                      <FaShoppingBasket /> Buy on WhatsApp
+//                    </a>
+//                  </button>
+//             </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+      
+//       {selectedImage && (
+//         <div className="image-modal" onClick={closeModal}>
+//           <span className="image-modal-close">&times;</span>
+//           <img
+//             src={selectedImage}
+//             alt="Full size"
+//             className="image-modal-content"
+//             onClick={(e) => e.stopPropagation()}
+//           />
+//         </div>
+//       )}
+//     </>
+//   );
+// };
+
+// export default CustomizeCake;
+
+
+
+
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+// import './RegularCake.css';
 import { FaShoppingBasket } from "react-icons/fa";
-import { useLocation, useNavigate } from "react-router-dom";
-import "./CustomizeCake.css";
-import cakesData1 from "../CustomizeCake.json"; // Assuming CustomizeCake.json is in the same directory
 import { generateWhatsAppLink } from "../whatsapplink/utils";
 
 const CustomizeCake = () => {
-  const navigate = useNavigate();
-  const [filters, setFilters] = useState({
-    name: "",
-    price: "",
-    quantity: "",
-    category: "",
-  });
-  const [filteredCakes, setFilteredCakes] = useState(cakesData1);
-  const location = useLocation();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-  // State to manage modal visibility and selected image
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [cakes, setCakes] = useState([]);
+  const [filteredCakes, setFilteredCakes] = useState([]);
+  const [selectedPrice, setSelectedPrice] = useState('');
+  const [selectedQuantity, setSelectedQuantity] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
 
   useEffect(() => {
-    const menuIcon = document.querySelector(".menu-icon");
-    const handleMenuClick = () => {
-      setIsMenuOpen((prev) => !prev);
-    };
+    axios.get('http://localhost:5000/custom_cakes')
+      .then((res) => {
+        setCakes(res.data);
+        setFilteredCakes(res.data); // Initial setting
+      })
+      .catch((err) => console.error(err));
+  }, []);
 
-    const handleClickOutside = (event) => {
-      if (!menuIcon.contains(event.target) && isMenuOpen) {
-        setIsMenuOpen(false);
-      }
-    };
+  const filterCakes = () => {
+    let filtered = cakes;
 
-    menuIcon.addEventListener("click", handleMenuClick);
-    document.addEventListener("click", handleClickOutside);
-
-    return () => {
-      menuIcon.removeEventListener("click", handleMenuClick);
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, [isMenuOpen]);
-
-  useEffect(() => {
-    const query = new URLSearchParams(location.search);
-    const category = query.get("category") || "";
-    setFilters({ ...filters, category });
-  }, [location.search]);
-
-  useEffect(() => {
-    let filtered = cakesData1;
-
-    // Normalize filters
-    const normalizedFilters = {
-      name: filters.name.trim().toLowerCase(),
-      price: filters.price.trim(),
-      quantity: filters.quantity.trim(),
-      category: filters.category.trim().toLowerCase(),
-    };
-
-    // Apply filters
-    if (normalizedFilters.name) {
-      filtered = filtered.filter((cake) =>
-        cake.name.toLowerCase().includes(normalizedFilters.name)
-      );
+    if (selectedPrice) {
+      filtered = filtered.filter(cake => cake.price <= selectedPrice);
     }
-    if (normalizedFilters.price) {
-      if (normalizedFilters.price === "100-500") {
-        filtered = filtered.filter(
-          (cake) => cake.price >= 100 && cake.price <= 500
-        );
-      } else if (normalizedFilters.price === "below-1000") {
-        filtered = filtered.filter((cake) => cake.price <= 1000);
-      } else if (normalizedFilters.price === "above-1000") {
-        filtered = filtered.filter((cake) => cake.price > 1000);
-      }
+
+    if (selectedQuantity) {
+      filtered = filtered.filter(cake => cake.quantity === selectedQuantity);
     }
-    if (normalizedFilters.quantity) {
-      filtered = filtered.filter(
-        (cake) => cake.quantity.trim() === normalizedFilters.quantity
-      );
-    }
-    if (normalizedFilters.category) {
-      filtered = filtered.filter((cake) =>
-        cake.category.toLowerCase().includes(normalizedFilters.category)
-      );
+
+    if (selectedCategory) {
+      filtered = filtered.filter(cake => cake.category === selectedCategory);
     }
 
     setFilteredCakes(filtered);
-  }, [filters]);
-
-  // Function to open the image in a modal
-  const openModal = (image) => {
-    setSelectedImage(image);
   };
 
-  // Function to close the modal
-  const closeModal = () => {
-    setSelectedImage(null);
-  };
+  useEffect(() => {
+    filterCakes();
+  }, [selectedPrice, selectedQuantity, selectedCategory]);
 
   return (
-    <>
-      <div className="regular-cake-hero">
-        <div
-          className={`regular-cake-hero-content ${isMenuOpen ? "hidden" : ""}`}
-        >
-          <h1 className="regular-cake-hero-h1">Taste the Magic of Our Cakes</h1>
-          <p className="regular-cake-hero-p">
-            The Perfect Cake for Every Occasion
-          </p>
+    <div className="cake-shop">
+      {/* Banner */}
+      <div className="regular-cake-hero1">
+        <div className="regular-cake-hero1-content">
+          <h1 className="regular-cake-hero1-h1">Regular Cakes</h1>
+          <p className="regular-cake-hero1-p">Delicious cakes for every occasion!</p>
         </div>
       </div>
-      <div className="cake-shop">
-        <div className="filters">
-          <select
-            onChange={(e) => setFilters({ ...filters, price: e.target.value })}
-          >
-            <option value="">Select Price Range</option>
-            <option value="100-500">100 - 500</option>
-            <option value="below-1000">Below 1000</option>
-            <option value="above-1000">Above 1000</option>
-          </select>
-          <select
-            onChange={(e) =>
-              setFilters({ ...filters, quantity: e.target.value })
-            }
-          >
-            <option value="">Select Quantity</option>
-            <option value="1 kg">1 kg</option>
-            <option value="1.5 kg">1.5 kg</option>
-            <option value="2 kg">2 kg</option>
-            <option value="2.5 kg">2.5 kg</option>
-            <option value="3 kg">3 kg</option>
-            <option value="4 kg">4 kg</option>
-            <option value="5 kg">5 kg</option>
-            <option value="7 kg">7 kg</option>
-          </select>
-          <select
-            onChange={(e) =>
-              setFilters({ ...filters, category: e.target.value })
-            }
-          >
-            <option value="">Select Category</option>
-            <option value="Anniversary">Anniversary</option>
-            <option value="Customized">Customized Cake</option>
-            <option value="Boys">Boys Cake</option>
-            <option value="Girls">Girls Cake</option>
-            <option value="baby">Baby Cake</option>
-            {/* Add more options as needed */}
-          </select>
-        </div>
-        <div className="regular-cake-cards">
-          {filteredCakes.map((cake) => (
-            <div key={cake.id} className="regular-cake-card">
-              <img
-                src={process.env.PUBLIC_URL + cake.image}
-                //alt={cake.name}
-                alt={`Image of ${cake.name}`}
-                className="regular-cake-image"
-                onError={(e) => e.target.src = 'fallback-image-url'}
-                onClick={() => openModal(process.env.PUBLIC_URL + cake.image)}
-              />
-              <div className="regular-cake-details">
-                <h3>{cake.name}</h3>
-                <p> (Mini) {cake.quantity}</p>
-                <p className="regular-price">
-                  <span className="regular-original-price">
-                    ₹{cake.price * 1.2}
-                  </span>{" "}
-                  {/* Assuming original price is 20% higher */}
-                  <span className="regular-discounted-price">
-                    ₹{cake.price} Per kg
-                  </span>
-                </p>
-                <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
+
+      {/* Filters */}
+      <div className="filters">
+        <select onChange={(e) => setSelectedPrice(e.target.value)} value={selectedPrice}>
+          <option value="">Select Price</option>
+          <option value="500">Up to ₹500</option>
+          <option value="1000">Up to ₹1000</option>
+          <option value="2000">Up to ₹2000</option>
+        </select>
+
+        <select onChange={(e) => setSelectedQuantity(e.target.value)} value={selectedQuantity}>
+          <option value="">Select Quantity</option>
+          <option value="1kg">1kg</option>
+          <option value="500g">500g</option>
+        </select>
+
+        <select onChange={(e) => setSelectedCategory(e.target.value)} value={selectedCategory}>
+          <option value="">Select Category</option>
+          <option value="birthday">Birthday</option>
+          <option value="wedding">Wedding</option>
+          <option value="anniversary">Anniversary</option>
+        </select>
+      </div>
+
+      {/* Cake Cards */}
+      <div className="regular-cake-cards">
+        {filteredCakes.map((cake) => (
+          <div key={cake.id} className="regular-cake-card">
+            <img
+              src={`http://localhost:5000${cake.image}`}
+              alt={`Image of ${cake.name}`}
+              className="regular-cake-image"
+            />
+            <h3>{cake.name}</h3>
+            <p>Category: {cake.category}</p>
+            <p>(mini){cake.quantity}</p>
+            <p>₹{cake.price} {' '} Per Kg</p>
+            {/* WhatsApp Button */}
+            <button className="regular-whatsapp-button" aria-label={`Buy ${cake.name} on WhatsApp`}>
                    <a
                     href={generateWhatsAppLink(cake)}
                     target="_blank"
@@ -182,28 +308,11 @@ const CustomizeCake = () => {
                      <FaShoppingBasket /> Buy on WhatsApp
                    </a>
                  </button>
-            </div>
-            </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-      
-      {selectedImage && (
-        <div className="image-modal" onClick={closeModal}>
-          <span className="image-modal-close">&times;</span>
-          <img
-            src={selectedImage}
-            alt="Full size"
-            className="image-modal-content"
-            onClick={(e) => e.stopPropagation()}
-          />
-        </div>
-      )}
-    </>
+    </div>
   );
 };
 
 export default CustomizeCake;
-
-
-
