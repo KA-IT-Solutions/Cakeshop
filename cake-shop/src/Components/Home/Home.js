@@ -5,6 +5,10 @@ import Product from '../Product/Product';
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
+
+  
+
   useEffect(() => {
     const menuIcon = document.querySelector('.menu-icon');
     const handleMenuClick = () => {
