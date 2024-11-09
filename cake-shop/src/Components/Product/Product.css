@@ -127,10 +127,10 @@
   margin-top: 1rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: rgb(252, 206, 252);
+  background-color: rgb(255, 8, 255);
 }
 .card-button:hover{
-  background-color: #fcaffc;
+  background-color: #06ff1b;
 }
 
 @media (max-width: 768px) {
@@ -167,13 +167,19 @@
     align-items: start;
 
   }
-  .map-sectio{
-    height: 100px;
-    width: 100px;
+  .map-section{
+    height: 350px;
+    width: 350px;
+  
+    margin-right: 100px;
+
+   
   }
   .contact-icon-info{
-    height: 300px;
+    margin-left: 700px;
+    height: 250px;
     width: 300px;
+
   }
 }
 
@@ -234,12 +240,12 @@
 }
 
 .whatsapp-button a {
-  color: black; /* Change text color to black */
+  color: #ffffff; /* Change text color to black */
   text-decoration: none; /* Remove underline from the link */
 }
 
 .whatsapp-button a:hover {
-  color: #333; /* Optional: Darker shade for hover effect */
+  color: #ffffff; /* Optional: Darker shade for hover effect */
 }
 
 
@@ -391,8 +397,9 @@
   }
 
   .whatsapp-button {
-    padding: 2px; 
+    padding: 20px; 
     font-size: 0.5rem; 
+
   }
   .gmap-frame{
     height: 400px;
@@ -573,7 +580,7 @@
   justify-content: center;
   background-color: #25d366;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
   border: none;
   border-radius: 5px;
   cursor: pointer;

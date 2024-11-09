@@ -197,11 +197,14 @@
   justify-content: center;
   background-color: #25d366;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   cursor: pointer;
   margin: 0 auto; /* Center the button horizontally */
+  width: 200px; 
+  height: 10px;
+  font-size: 1rem; 
 }
 
 .cake-shop .regular-whatsapp-button svg {
@@ -213,12 +216,12 @@
 }
 
 .regular-whatsapp-button a {
-  color: black; /* Change text color to black */
+  color: rgb(255, 255, 255); /* Change text color to black */
   text-decoration: none; /* Remove underline from the link */
 }
 
 .regular-whatsapp-button a:hover {
-  color: #333; /* Optional: Darker shade for hover effect */
+  color: #ffffff; /* Optional: Darker shade for hover effect */
 }
 
 
@@ -304,4 +307,81 @@
     max-width: 100%;
     height: auto;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.regular-whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+.regular-whatsapp-button svg {
+  margin-right: 5px;
+}
+
+.regular-whatsapp-button:hover {
+  background-color: #1da851;
 }
