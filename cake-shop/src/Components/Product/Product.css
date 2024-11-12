@@ -127,10 +127,10 @@
   margin-top: 1rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: rgb(255, 8, 255);
+  background-color: rgb(3, 138, 44);
 }
 .card-button:hover{
-  background-color: #06ff1b;
+  background-color: #06550d;
 }
 
 @media (max-width: 768px) {
@@ -154,7 +154,7 @@
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-  .card-title {
+  .card-title { 
       font-size: 1.2em;
   }
 
