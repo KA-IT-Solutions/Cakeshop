@@ -1,10 +1,11 @@
 
 
+
 // import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
-// // import './AdminPanel.css';
+// import './AdminPanel.css'; // Import the CSS file for styling
 
-// const CustomizeAdmin= () => {
+// const CustomizeAdmin = () => {
 //   const [cakeData, setCakeData] = useState({
 //     id: '',
 //     name: '',
@@ -78,7 +79,21 @@
 
 //   return (
 //     <div>
-//       <div><h2>Manage Custom Cake</h2></div>
+//       <div style={{
+//         color: 'white',
+//         font: 'bold',
+//         height: '70px',
+//         backgroundColor: 'rgb(5,12,22)',
+//         textAlign: 'center',
+//         fontSize: '1.5rem',
+//         display: 'flex',
+//         justifyContent: "center",
+//         alignItems: "center",
+//         marginBottom: '50px',
+//         marginTop: '-10px'
+//       }}>
+//         <h2>Manage Custom Cake</h2>
+//       </div>
 //       <form onSubmit={handleSubmit}>
 //         <input
 //           type="text"
@@ -109,17 +124,19 @@
 //           onChange={handleInputChange}
 //         />
 //         <input type="file" onChange={handleImageChange} />
-//         <button type="submit">{cakeData.id ? 'Update Cake' : 'Upload Cake'}</button>
+//         <button className='uploadbutton' type="submit">{cakeData.id ? 'Update Cake' : 'Upload Cake'}</button>
 //       </form>
 
-//       <h2>Existing Custom Cakes</h2>
+//       <h2 style={{ font: 'bold' }}>Existing Custom Cakes</h2>
 //       <div className="cake-list">
 //         {cakes.map((cake) => (
 //           <div key={cake.id} className="cake-item">
 //             <h3>{cake.name}</h3>
 //             <img src={`http://localhost:5000${cake.image}`} alt={cake.name} />
-//             <button onClick={() => handleEdit(cake)}>Edit</button>
-//             <button onClick={() => handleDelete(cake.id)}>Delete</button>
+//             <div className='edbutton'>
+//               <button className="edit-button" onClick={() => handleEdit(cake)}>Edit</button>
+//               <button className="delete-button" onClick={() => handleDelete(cake.id)}>Delete</button>
+//             </div>
 //           </div>
 //         ))}
 //       </div>
@@ -128,6 +145,9 @@
 // };
 
 // export default CustomizeAdmin;
+
+
+
 
 
 import React, { useState, useEffect } from 'react';
@@ -207,29 +227,20 @@ const CustomizeAdmin = () => {
   };
 
   return (
-    <div>
-      <div style={{
-        color: 'white',
-        font: 'bold',
-        height: '70px',
-        backgroundColor: 'rgb(5,12,22)',
-        textAlign: 'center',
-        fontSize: '1.5rem',
-        display: 'flex',
-        justifyContent: "center",
-        alignItems: "center",
-        marginBottom: '50px',
-        marginTop: '-10px'
-      }}>
-        <h2>Manage Custom Cake</h2>
+    <div className="p-4">
+      <div className="bg-gray-800 text-white text-center py-4 mb-8 rounded-md">
+        <h2 className="text-xl font-bold">Manage Custom Cake</h2>
       </div>
-      <form onSubmit={handleSubmit}>
+
+      {/* Form to add/update cakes */}
+      <form onSubmit={handleSubmit} className="space-y-4 mb-8">
         <input
           type="text"
           name="name"
           placeholder="Cake Name"
           value={cakeData.name}
           onChange={handleInputChange}
+          className="w-full p-2 border border-gray-300 rounded-md"
         />
         <input
           type="text"
@@ -237,6 +248,7 @@ const CustomizeAdmin = () => {
           placeholder="Category"
           value={cakeData.category}
           onChange={handleInputChange}
+          className="w-full p-2 border border-gray-300 rounded-md"
         />
         <input
           type="number"
@@ -244,6 +256,7 @@ const CustomizeAdmin = () => {
           placeholder="Price"
           value={cakeData.price}
           onChange={handleInputChange}
+          className="w-full p-2 border border-gray-300 rounded-md"
         />
         <input
           type="text"
@@ -251,20 +264,44 @@ const CustomizeAdmin = () => {
           placeholder="Quantity (e.g., 1 kg)"
           value={cakeData.quantity}
           onChange={handleInputChange}
+          className="w-full p-2 border border-gray-300 rounded-md"
         />
-        <input type="file" onChange={handleImageChange} />
-        <button className='uploadbutton' type="submit">{cakeData.id ? 'Update Cake' : 'Upload Cake'}</button>
+        <input
+          type="file"
+          onChange={handleImageChange}
+          className="w-full p-2 border border-gray-300 rounded-md"
+        />
+        <button
+          type="submit"
+          className="w-full p-2 bg-blue-600 text-white rounded-md"
+        >
+          {cakeData.id ? 'Update Cake' : 'Upload Cake'}
+        </button>
       </form>
 
-      <h2 style={{ font: 'bold' }}>Existing Custom Cakes</h2>
-      <div className="cake-list">
+      <h2 className="text-xl font-bold mb-4">Existing Custom Cakes</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {cakes.map((cake) => (
-          <div key={cake.id} className="cake-item">
-            <h3>{cake.name}</h3>
-            <img src={`http://localhost:5000${cake.image}`} alt={cake.name} />
-            <div className='edbutton'>
-              <button className="edit-button" onClick={() => handleEdit(cake)}>Edit</button>
-              <button className="delete-button" onClick={() => handleDelete(cake.id)}>Delete</button>
+          <div key={cake.id} className="bg-gray-100 p-4 rounded-md shadow-md">
+            <h3 className="font-bold text-center">{cake.name}</h3>
+            <img
+              src={`http://localhost:5000${cake.image}`}
+              alt={cake.name}
+              className="w-full h-48 object-cover mb-4 rounded-md"
+            />
+            <div className="flex justify-between items-center">
+              <button
+                className="px-4 py-2 bg-green-600 text-white rounded-md"
+                onClick={() => handleEdit(cake)}
+              >
+                Edit
+              </button>
+              <button
+                className="px-4 py-2 bg-red-600 text-white rounded-md"
+                onClick={() => handleDelete(cake.id)}
+              >
+                Delete
+              </button>
             </div>
           </div>
         ))}

@@ -10,6 +10,8 @@ import AdminPanel from './Components/Admin/Shared/AdminPanel';
 import RegularAdmin from './Components/Admin/Regularadmin/Regularadmin';
 import CustomizeAdmin from './Components/Admin/Customizeadmin/Customizeadmin';
 import ContactAdmin from './Components/Admin/Contactadmin/Contactadmin';
+import AdminLogin from './Components/Admin/Adminlogin/AdminLogin';
+import ProtectedRoute from './Components/ProtectedRoute';
 
 function App() {
   const location = useLocation(); // Get the current route location
@@ -30,10 +32,13 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
 
         {/* Admin Panel Routes */}
-        <Route path="/admin" element={<AdminPanel />}>
-          <Route path="regular" element={<RegularAdmin />} />
-          <Route path="customize" element={<CustomizeAdmin />} />
-          <Route path="contact" element={<ContactAdmin />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route element={<ProtectedRoute />}>
+           <Route path="/admin" element={<AdminPanel />}>
+              <Route path="regular" element={<RegularAdmin />} />
+              <Route path="customize" element={<CustomizeAdmin />} />
+              <Route path="contact" element={<ContactAdmin />} />
+           </Route>
         </Route>
       </Routes>
 

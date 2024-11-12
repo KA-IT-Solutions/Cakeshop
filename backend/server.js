@@ -107,18 +107,21 @@
 
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config();
 const multer = require('multer');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const path = require('path');
 const fs = require('fs');
-
+const jwt = require('jsonwebtoken');
 const app = express();
+const SECRET_KEY = process.env.SECRET_KEY; 
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.json()); //json middleware
 app.use(express.static('uploads'));
 app.use('/photos', express.static('photos')); // Use 'photos' folder for custom cakes
-
+const verifyToken = require('./middleware/authMiddleware');
 // MySQL database connection
 const db = mysql.createConnection({
   host: 'localhost',
@@ -496,7 +499,34 @@ app.delete('/contact/:id', (req, res) => {
 
 
 
+// //admin login authentication
+// // Backend route (e.g., Express.js)
+// app.post('/api/admin/login', (req, res) => {
+//   const { username, password } = req.body;
+//   if (username === 'admin' && password === 'password123') {
+//     const token = generateToken(); // Generate a secure token
+//     res.json({ token });
+//   } else {
+//     res.status(401).json({ message: 'Invalid credentials' });
+//   }
+// });
 
+
+app.post('/api/admin/login', (req, res) => {
+  const { username, password } = req.body;
+
+  if (username === 'admin' && password === 'password123') {
+    // Generate a token using the secret key from .env
+    const token = jwt.sign({ username }, SECRET_KEY, { expiresIn: '1h' });
+    res.json({ token });
+  } else {
+    res.status(401).json({ message: 'Invalid credentials' });
+  }
+});
+
+app.get('/api/admin', verifyToken, (req, res) => {
+  res.json({ message: 'Welcome to the Admin Panel', user: req.user });
+});
 
 
 

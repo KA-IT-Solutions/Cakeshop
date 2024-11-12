@@ -1,0 +1,26 @@
+/* src/Components/Admin/Sidebar.css */
+.sidebar {
+    background-color: rgb(4, 12, 21);
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .logout-btn {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: auto;
+  }
+  
+  .logout-btn:hover {
+    background-color: #d32f2f;
+  }
+  
