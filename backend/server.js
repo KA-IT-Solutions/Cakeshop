@@ -138,16 +138,29 @@ const verifyToken = require('./middleware/authMiddleware');
 require('dotenv').config();
 //const mysql = require('mysql');
 
+const url = require('url');
+
+// Define the connection URL directly
+const connectionUrl = 'mysql://root:UdYoduTAorWkNMXOYmpmATFAzBafxmaR@mysql.railway.internal:3306/railway';
+
+// Parse the URL
+const dbUrl = new url.URL(connectionUrl);
+
+// Create the database connection
 const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  host: dbUrl.hostname,
+  user: dbUrl.username,
+  password: dbUrl.password,
+  database: dbUrl.pathname.substring(1), // Remove the leading "/"
+  port: dbUrl.port,
 });
 
 db.connect((err) => {
-  if (err) throw err;
-  console.log('Connected to MySQL database');
+  if (err) {
+    console.error('Error connecting to the database:', err);
+    return;
+  }
+  console.log('Connected to the MySQL database.');
 });
 
 
