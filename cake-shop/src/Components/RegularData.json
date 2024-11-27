@@ -5,7 +5,8 @@
     "category": "Anniversary",
     "price": 350,
     "quantity": " 1/2 kg",
-    "image": "/RegularCake-images/RegularCake1.png"
+    "image": "data:image/jpeg"
+    
   },
   {
     "id": 2,

@@ -20,7 +20,9 @@
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.1.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "proxy": "http://localhost:5000"
+
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,7 +30,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  
   "browserslist": {
     "production": [
       ">0.2%",
@@ -40,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
   }
 }

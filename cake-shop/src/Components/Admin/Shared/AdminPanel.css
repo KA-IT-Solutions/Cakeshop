@@ -1,0 +1,65 @@
+/* src/Components/Admin/AdminPanel.css */
+
+/* Main container for admin panel */
+.admin-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(4, 12, 21); /* Dark background */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Content area beside sidebar */
+  .admin-content {
+    margin-left: 240px; /* Matches the sidebar width */
+    flex-grow: 1;
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 20px;
+    overflow-y: auto; /* Makes the content scrollable */
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* src/Components/Admin/AdminPanel.css */
+.admin-container {
+    display: flex;
+  }
+  
+  .admin-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logout-btn {
+    padding: 10px 20px;
+    background-color: #f44336; /* Red color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #d32f2f;
+  }
+  

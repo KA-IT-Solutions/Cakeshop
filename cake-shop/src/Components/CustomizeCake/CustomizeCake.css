@@ -120,116 +120,6 @@
 
 
 
-
-/* --------------------------------filters css start---------------------- */
-/* .cake-shop {
-  padding: 20px;
-}
-
-.cake-shop .filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; 
-  scrollbar-width: none; 
-}
-
-.cake-shop .filters::-webkit-scrollbar {
-  display: none; 
-}
-
-.cake-shop .filters select {
-  padding: 10px;
-  font-size: 16px;
-  flex: 1 1 200px;
-}
-
-.cake-shop .regular-cake-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.cake-shop .regular-cake-card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-  transition: transform 0.3s;
-}
-
-.cake-shop .regular-cake-image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s;
-}
-
-.cake-shop .regular-cake-image:hover {
-  transform: scale(1.05);
-}
-
-.cake-shop .regular-cake-details {
-  margin-top: 10px;
-
-}
-
-.cake-shop .regular-price {
-  font-size: 18px;
-  color: #333;
-}
-
-.cake-shop .regular-original-price {
-  text-decoration: line-through;
-  color: lightgrey;
-  margin-right: 5px;
-}
-
-.cake-shop .regular-discounted-price {
-  color: #000;
-}
-
-.cake-shop .regular-whatsapp-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #25d366;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 0 auto; 
-}
-
-.cake-shop .regular-whatsapp-button svg {
-  margin-right: 5px;
-}
-
-.cake-shop .regular-whatsapp-button:hover {
-  background-color: #1da851;
-}
-
-
-@media (max-width: 768px) {
-  .cake-shop .filters {
-    flex-direction: row;
-    height: auto;
-  }
-
-  .cake-shop .filters-item {
-    flex: 0 0 auto;
-    margin-right: 1rem;
-  }
-
-  .cake-shop .regular-cake-cards {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-} */
-
 /* --------------hide heading text----------- */
 
 .regular-cake-hero-content.hidden h1,
@@ -248,4 +138,68 @@
     display: block;
     /* Add your styling for the menu icon */
   }
+}
+
+/* -------------------------------model css---------------- */
+.image-modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-modal-content {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 5px;
+}
+
+.image-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.image-modal-close:hover,
+.image-modal-close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+.regular-whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+.regular-whatsapp-button svg {
+  margin-right: 5px;
+}
+
+.regular-whatsapp-button:hover {
+  background-color: #1da851;
 }

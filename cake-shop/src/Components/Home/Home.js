@@ -5,6 +5,10 @@ import Product from '../Product/Product';
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
+
+  
+
   useEffect(() => {
     const menuIcon = document.querySelector('.menu-icon');
     const handleMenuClick = () => {
@@ -30,8 +34,8 @@ const Home = () => {
     <>
       <div className="hero">
         <div className={`hero-content ${isMenuOpen ? 'hidden' : ''}`}>
-          <h1 className='hero-h1'>Welcome to Your Sweet Escape</h1>
-          <p className='hero-p'>The Lila's Cake Shop: Sweetness Redefined</p>
+          <h1 className='hero-h1'>Welcome to You The Lila's Cakes</h1>
+          <p className='hero-p'>Made with Love..!!</p>
           {/* <button className="hero-button">Get Started</button> */}
         </div>
       </div>

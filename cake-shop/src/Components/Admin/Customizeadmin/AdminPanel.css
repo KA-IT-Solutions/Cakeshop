@@ -1,0 +1,120 @@
+.admin-cake-image {
+    max-width: 150px; /* Set the maximum width of the image */
+    max-height: 150px; /* Set the maximum height of the image */
+    object-fit: cover; /* Ensure the image maintains aspect ratio while covering the area */
+    border-radius: 8px; /* Optional: Rounded corners */
+    margin-bottom: 10px; /* Space between image and buttons */
+  }
+  
+  .cake-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .cake-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+  }
+
+
+
+
+
+
+  .edbutton{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /* Edit button - green */
+.edit-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: darkgreen; /* Darker green on hover */
+  }
+  
+  /* Delete button - red */
+  .delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Adds space between the buttons */
+  }
+  
+  .delete-button:hover {
+    background-color: darkred; /* Darker red on hover */
+  }
+
+
+
+  
+  
+  .uploadbutton{
+    background-color:blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; 
+
+  }
+
+  .uploadbutton:hover {
+    background-color: rgb(50, 50, 103); /* Darker red on hover */
+  }
+
+  .regularnavba{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(36, 6, 22);
+    margin: 30px;
+    color: pink;
+  }
+
+  .h2{
+    color: aquamarine;
+  }
+  
+
+  .cake-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    justify-content: space-between; /* Distribute space evenly */
+  }
+  
+  .cake-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: calc(25% - 20px); /* 25% width for four items per row */
+    background-color: #fff;
+  }
+  
+  .cake-item img {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Set a maximum height to reduce size */
+  }
+  
