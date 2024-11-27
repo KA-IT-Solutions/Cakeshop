@@ -123,17 +123,33 @@ app.use(express.static('uploads'));
 app.use('/photos', express.static('photos')); // Use 'photos' folder for custom cakes
 const verifyToken = require('./middleware/authMiddleware');
 // MySQL database connection
+// const db = mysql.createConnection({
+//   host: 'localhost',
+//   user: 'root',  // Your MySQL username
+//   password: '',  // Your MySQL password
+//   database: 'cakeshop',  // Your database name
+// });
+
+// db.connect((err) => {
+//   if (err) throw err;
+//   console.log('Connected to MySQL database');
+// });
+
+require('dotenv').config();
+//const mysql = require('mysql');
+
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',  // Your MySQL username
-  password: '',  // Your MySQL password
-  database: 'cakeshop',  // Your database name
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
 db.connect((err) => {
   if (err) throw err;
   console.log('Connected to MySQL database');
 });
+
 
 // Multer configuration for image uploads
 const storage = multer.diskStorage({
@@ -543,11 +559,16 @@ app.get('/api/admin', verifyToken, (req, res) => {
 
 
 // Start the server
-const PORT = 5000;
+// const PORT = 5000 
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
+
+const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
 
 
 

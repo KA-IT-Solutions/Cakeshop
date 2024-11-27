@@ -10,7 +10,7 @@ import AdminPanel from './Components/Admin/Shared/AdminPanel';
 import RegularAdmin from './Components/Admin/Regularadmin/Regularadmin';
 import CustomizeAdmin from './Components/Admin/Customizeadmin/Customizeadmin';
 import ContactAdmin from './Components/Admin/Contactadmin/Contactadmin';
-import AdminLogin from './Components/Admin/Adminlogin/AdminLogin';
+import AdminLogin from './Components/Admin/AdminLogin/AdminLogin';
 import ProtectedRoute from './Components/ProtectedRoute';
 
 function App() {

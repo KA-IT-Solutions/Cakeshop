@@ -533,7 +533,7 @@ const Product = () => {
           <div className="card">
             <img src={Anivarsary} alt="Anniversary" className="card-image" onClick={() => handleImageClick(Anivarsary)} />
             <button className="card-button" onClick={() => handleCustomiseClick('Anniversary')}>
-              Anniversary Cake
+              Anniversary/Wedding Cake
             </button>
           </div>
           <div className="card">
@@ -551,32 +551,32 @@ const Product = () => {
           <div className="card">
             <img src={baby} alt="Baby" className="card-image" onClick={() => handleImageClick(baby)} />
             <button className="card-button" onClick={() => handleCustomiseClick('baby')}>
-              Baby Cake
+              6 Months Baby Cake
             </button>
           </div>
-          <div className="card">
+          {/* <div className="card">
             <img src={Customise} alt="Customise" className="card-image" onClick={() => handleImageClick(Customise)} />
             <button className="card-button" onClick={() => handleCustomiseClick('Customized')}>
               Customise Cake
             </button>
-          </div>
+          </div> */}
 
 
 
 
-          <div className="card">
+          {/* <div className="card">
             <img src={Wedding} alt="Customise" className="card-image" onClick={() => handleImageClick(Wedding)} />
             <button className="card-button" onClick={() => handleCustomiseClick('Customized')}>
-            wedding cake 
+            
             </button>
-          </div>
+          </div> */}
 
 
 
           <div className="card">
             <img src={brides} alt="Customise" className="card-image" onClick={() => handleImageClick(brides)} />
             <button className="card-button" onClick={() => handleCustomiseClick('Customized')}>
-            the bride's cake
+            Bride to be Cake
             </button>
           </div>
         </div>

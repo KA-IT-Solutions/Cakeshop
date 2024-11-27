@@ -93,3 +93,11 @@
     }
   }
   
+  .footer-link {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
